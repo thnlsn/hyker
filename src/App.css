@@ -7,6 +7,32 @@ Dark green: #28b485
 
  */
 
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+
+/* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This makes the box model not count borders/paddings in total height/width*/
+}
+
+/* Setting this is body because fonts will be inherited by child elements */
+body {
+  font-family: 'Lato', sans-serif; /* Setting font to Lato, but if it is not available, use basic sans-serif */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; /* 1.7x larger than the default */
+  color: #777777;
+}
+
+/* class selector instal of default header element */
+.header {
+  height: 95vh;
+  background-image: url(../src/images/hero.jpg);
+}
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
+
 /* .App {
   text-align: center;
 }
