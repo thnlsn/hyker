@@ -1,6 +1,12 @@
 # Hyker
 
-## Responsive design
+=============
+
+## Three pillars of HTML and CSS design
+
+---
+
+### Responsive design
 
 - Fluid layouts
 - Media Queries
@@ -8,7 +14,7 @@
 - Correct Units
 - Desktop-first vs mobile-first
 
-## Maintainable and scalable code
+### Maintainable and scalable code
 
 - Clean
 - Easy-to-understand
@@ -19,7 +25,7 @@
   - How to name classes
   - How to structure HTML
 
-## Web performance
+### Web performance
 
 - Less HTTP requests
 - Less code
@@ -29,3 +35,5 @@
   - Images take up the most space
 - Compress images
   - Compressed images will take less bandwith from the user
+
+##
