@@ -13,7 +13,7 @@ const Header = () => {
           <span className='heading-primary-sub'>is where life happens</span>
         </h1>
         {/* Notice the non-usage of the button element */}
-        <a href='#' className='btn btn-white'>
+        <a href='#' className='btn btn-white btn-animated'>
           Discover our hikes
         </a>
       </div>

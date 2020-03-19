@@ -33,6 +33,7 @@
   text-transform: uppercase;
 
   backface-visibility: hidden;
+  margin-bottom: 60px; /* To distance the button from the heading */
 }
 
 .heading-primary-main {
@@ -43,7 +44,7 @@
 
   animation-name: moveInLeft;
   animation-duration: 1s;
-  animation-timing-function: ease-out; /* (#400???) Research this property more later */
+  animation-timing-function: ease-out; /* (???) Research this property more later */
 
   /*   
   animation-delay: 1s;
@@ -68,6 +69,7 @@
     -50%,
     -50%
   ); /* The box will be shifted half it's width to the left and up, to allow for true centering */
+  text-align: center; /* This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline) */
 }
 
 /* link and visited are pseudo-classes, so we write the style for these specific states of the anchor element */
@@ -75,13 +77,57 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 100px;
+  padding: 15px 40px;
+  display: inline-block; /* This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default) */
+  /* This is the simpler way of animating, when keyframes are not neccesary */
+  transition: all 0.2s; /* all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds */
+  position: relative; /* This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set) */
+}
+
+.btn:hover {
+  transform: translateY(
+    -3px
+  ); /* negtative (-) because postive would mean going away from the Y axis into the element more (so down), negative means up and out of the element */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* x-offset y-offset blur color */
+}
+
+.btn:active {
+  transform: translateY(
+    -1px
+  ); /* Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked. */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ::active is a pseudo-element, it is not in the html markup, but it does exist on the page */
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%; /* 100% of the height of .btn */
+  width: 100%; /* 100% of the height of .btn */
+  border-radius: 100px; /* Mimic the dimensions of the original button */
+
+  position: absolute;
+  top: 0; /* Coordinates defined based on the nearest parent with position: relative (so .btn) */
+  left: 0;
+  z-index: -1; /* Set behind the real button so it does not cover the text */
+
+  transition: all 0.4s;
 }
 
 .btn-white {
   background-color: #fff;
   color: #777;
-  padding: 15px 40px;
-  display: inline-block; /* This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default) */
+}
+
+.btn-white::after {
+  background-color: white;
+}
+
+/* ::after styles will occur when btn is hovered */
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6); /* Since this is gonna be for an animation, we have to set a transition on the initial state */
+  opacity: 0;
 }
 
 @keyframes moveInLeft {
@@ -117,5 +163,28 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.btn-animated {
+  animation: moveInBottom 1.7s ease-out 0.75s; /* name, duration, animation-timing-function, delay */
+  animation-fill-mode: backwards; /* This will automatically apply the values of the 0% keyframe before the animations starts */
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(
+      30px
+    ); /* At the start of the animation, the element should be 100px shifted to the right */
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
