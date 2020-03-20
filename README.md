@@ -1,6 +1,6 @@
 # Hyker
 
-=============
+---
 
 ## Three pillars of HTML and CSS design
 
