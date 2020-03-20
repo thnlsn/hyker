@@ -14,7 +14,7 @@ const Header = () => {
         </h1>
         {/* Notice the non-usage of the button element */}
         <a href='#' className='btn btn-white btn-animated'>
-          Discover our hikes
+          Discover our tours
         </a>
       </div>
     </header>

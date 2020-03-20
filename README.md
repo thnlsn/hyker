@@ -4,8 +4,6 @@
 
 ## Three pillars of HTML and CSS design
 
----
-
 ### Responsive design
 
 - Fluid layouts
@@ -21,9 +19,9 @@
 - Growth
 - Reusable
   - #### CSS Architecture
-  - How to organize files
-  - How to name classes
-  - How to structure HTML
+    - How to organize files
+    - How to name classes
+    - How to structure HTML
 
 ### Web performance
 
@@ -36,4 +34,4 @@
 - Compress images
   - Compressed images will take less bandwith from the user
 
-##
+## What happens to CSS when we load a webpage
