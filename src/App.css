@@ -10,15 +10,20 @@ Dark green: #28b485
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
 
 /* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
-* {
+/* * only affects strict elements, and not pseudo-elements, so we include those in the reset */
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* This makes the box model not count borders/paddings in total height/width*/
+  box-sizing: inherit; /* The entire page will now inherit box-sizing from it's parent, wherever it is set (for example in body) */
 }
 
 html {
   /* This is being set for the purpose of easy rem calculations throughout the application */
-  font-size: 10px;
+  /* Browser default size is 16px, but we want to set it to a percentage in case people with bad eyes have a different default */
+  /* The percentage is 62.5% because it equates to 10px assuming the 16px default */
+  font-size: 62.5%;
 }
 
 /* Setting this is body because fonts will be inherited by child elements */
@@ -29,6 +34,8 @@ body {
   line-height: 1.7; /* 1.7x larger than the default */
   color: #777777;
   padding: 3rem;
+
+  box-sizing: border-box; /* This makes the box model not count borders/paddings in total height/width, and will extend to all children and their children because it is set to inherit in the * selector*/
 }
 
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */
