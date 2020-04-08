@@ -16,14 +16,19 @@ Dark green: #28b485
   box-sizing: border-box; /* This makes the box model not count borders/paddings in total height/width*/
 }
 
+html {
+  /* This is being set for the purpose of easy rem calculations throughout the application */
+  font-size: 10px;
+}
+
 /* Setting this is body because fonts will be inherited by child elements */
 body {
   font-family: 'Lato', sans-serif; /* Setting font to Lato, but if it is not available, use basic sans-serif */
   font-weight: 400;
-  font-size: 16px;
+  /*   font-size: 1.6rem; */
   line-height: 1.7; /* 1.7x larger than the default */
   color: #777777;
-  padding: 30px;
+  padding: 3rem;
 }
 
 /* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ */

@@ -20,12 +20,12 @@
 
 .logo-box {
   position: absolute; /* Positioned absolutely based on the top left corner of its parent element (.header) */
-  top: 40px; /* 40px away from the top of the parent element (.header) */
-  left: 40px; /* 40px away from the left side of the parent element (.header) */
+  top: 4rem; /* 40px away from the top of the parent element (.header) */
+  left: 4rem; /* 40px away from the left side of the parent element (.header) */
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .heading-primary {
@@ -33,14 +33,14 @@
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 60px; /* To distance the button from the heading */
+  margin-bottom: 6rem; /* To distance the button from the heading */
 }
 
 .heading-primary-main {
   display: block; /* Span elements are inline by default, so making it block will allow for a main title and subtitle */
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -54,9 +54,9 @@
 
 .heading-primary-sub {
   display: block; /* Displayed as block to show underneath the main title */
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
 
   animation: moveInRight 1s ease-out;
 }
@@ -77,26 +77,27 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
-  padding: 15px 40px;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
   display: inline-block; /* This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default) */
   /* This is the simpler way of animating, when keyframes are not neccesary */
   transition: all 0.2s; /* all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds */
   position: relative; /* This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set) */
+  font-size: 1.6rem;
 }
 
 .btn:hover {
   transform: translateY(
     -3px
   ); /* negtative (-) because postive would mean going away from the Y axis into the element more (so down), negative means up and out of the element */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* x-offset y-offset blur color */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* x-offset y-offset blur color */
 }
 
 .btn:active {
   transform: translateY(
     -1px
   ); /* Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked. */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* ::active is a pseudo-element, it is not in the html markup, but it does exist on the page */
@@ -105,7 +106,7 @@
   display: inline-block;
   height: 100%; /* 100% of the height of .btn */
   width: 100%; /* 100% of the height of .btn */
-  border-radius: 100px; /* Mimic the dimensions of the original button */
+  border-radius: 10rem; /* Mimic the dimensions of the original button */
 
   position: absolute;
   top: 0; /* Coordinates defined based on the nearest parent with position: relative (so .btn) */
@@ -134,12 +135,12 @@
   0% {
     opacity: 0;
     transform: translateX(
-      -100px
+      -10rem
     ); /* At the start of the animation, the element should be 100px shifted to the left */
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -152,12 +153,12 @@
   0% {
     opacity: 0;
     transform: translateX(
-      100px
+      10rem
     ); /* At the start of the animation, the element should be 100px shifted to the right */
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -175,12 +176,12 @@
   0% {
     opacity: 0;
     transform: translateY(
-      30px
+      3rem
     ); /* At the start of the animation, the element should be 100px shifted to the right */
   }
 
   80% {
-    transform: translateY(-2px);
+    transform: translateY(-0.2rem);
   }
 
   100% {
