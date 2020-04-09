@@ -12,7 +12,7 @@
   clip-path: polygon(
     0 0,
     100% 0,
-    100% 75vh,
+    100% 76vh,
     0 100%
   ); /* Defines corners of the element from top left going clockwise */
   position: relative;
