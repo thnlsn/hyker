@@ -9,7 +9,7 @@ const Header = () => {
       </div>
       <div className='text-box'>
         <h1 className='heading-primary'>
-          <span className='heading-primary-main'>Outdoors</span>
+          <span className='heading-primary-main'>Outside</span>
           <span className='heading-primary-sub'>is where life happens</span>
         </h1>
         {/* Notice the non-usage of the button element */}
