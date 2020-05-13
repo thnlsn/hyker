@@ -1,3 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* The entire page will now inherit box-sizing from it's parent, wherever it is set (for example in body) */ }
+
+html {
+  /* This is being set for the purpose of easy rem calculations throughout the application */
+  /* Browser default size is 16px, but we want to set it to a percentage in case people with bad eyes have a different default */
+  /* The percentage is 62.5% because it equates to 10px assuming the 16px default */
+  font-size: 62.5%; }
+
+/* Setting this is body because fonts will be inherited by child elements */
+body {
+  font-family: 'Lato', sans-serif;
+  /* Setting font to Lato, but if it is not available, use basic sans-serif */
+  font-weight: 400;
+  /*   font-size: 1.6rem; */
+  line-height: 1.7;
+  /* 1.7x larger than the default */
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box;
+  /* This makes the box model not count borders/paddings in total height/width, and will extend to all children and their children because it is set to inherit in the * selector*/ }
+
 /* class selector instal of default header element */
 .header {
   height: 95vh;
@@ -10,28 +37,25 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* Defines corners of the element from top left going clockwise */
   position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  /* Positioned absolutely based on the top left corner of its parent element (.header) */
-  top: 4rem;
-  /* 40px away from the top of the parent element (.header) */
-  left: 4rem;
-  /* 40px away from the left side of the parent element (.header) */ }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  /* The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off center*/
-  left: 50%;
-  /* The left side of the box will be 50% away from the left side of the parent (.element) */
-  transform: translate(-50%, -50%);
-  /* The box will be shifted half it's width to the left and up, to allow for true centering */
-  text-align: center;
-  /* This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline) */ }
+  .header__logo-box {
+    position: absolute;
+    /* Positioned absolutely based on the top left corner of its parent element (.header) */
+    top: 4rem;
+    /* 40px away from the top of the parent element (.header) */
+    left: 4rem;
+    /* 40px away from the left side of the parent element (.header) */ }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    /* The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off center*/
+    left: 50%;
+    /* The left side of the box will be 50% away from the left side of the parent (.element) */
+    transform: translate(-50%, -50%);
+    /* The box will be shifted half it's width to the left and up, to allow for true centering */
+    text-align: center;
+    /* This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline) */ }
 
 .heading-primary {
   color: #fff;
@@ -39,87 +63,84 @@
   backface-visibility: hidden;
   margin-bottom: 6rem;
   /* To distance the button from the heading */ }
-
-.heading-primary--main {
-  display: block;
-  /* Span elements are inline by default, so making it block will allow for a main title and subtitle */
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  /* (???) Research this property more later */
-  /*   
+  .heading-primary--main {
+    display: block;
+    /* Span elements are inline by default, so making it block will allow for a main title and subtitle */
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* (???) Research this property more later */
+    /*   
     animation-delay: 1s;
     animation-iteration-count: 3; 
     */ }
+  .heading-primary--sub {
+    display: block;
+    /* Displayed as block to show underneath the main title */
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
 
-.heading-primary--sub {
-  display: block;
-  /* Displayed as block to show underneath the main title */
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 1s ease-out; }
-
-/* link and visited are pseudo-classes, so we write the style for these specific states of the anchor element */
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 10rem;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  /* This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default) */
-  /* This is the simpler way of animating, when keyframes are not neccesary */
-  transition: all 0.2s;
-  /* all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds */
-  position: relative;
-  /* This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set) */
-  font-size: 1.6rem; }
-
-.btn:hover {
-  transform: translateY(-3px);
-  /* negtative (-) because postive would mean going away from the Y axis into the element more (so down), negative means up and out of the element */
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  /* x-offset y-offset blur color */ }
-
-.btn:active {
-  transform: translateY(-1px);
-  /* Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked. */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-/* ::active is a pseudo-element, it is not in the html markup, but it does exist on the page */
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  /* 100% of the height of .btn */
-  width: 100%;
-  /* 100% of the height of .btn */
-  border-radius: 10rem;
-  /* Mimic the dimensions of the original button */
-  position: absolute;
-  top: 0;
-  /* Coordinates defined based on the nearest parent with position: relative (so .btn) */
-  left: 0;
-  z-index: -1;
-  /* Set behind the real button so it does not cover the text */
-  transition: all 0.4s; }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-
-.btn-white::after {
-  background-color: white; }
-
-/* ::after styles will occur when btn is hovered */
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  /* Since this is gonna be for an animation, we have to set a transition on the initial state */
-  opacity: 0; }
+.btn {
+  /* link and visited are pseudo-classes, so we write the style for these specific states of the anchor element */
+  /* ::active is a pseudo-element, it is not in the html markup, but it does exist on the page */ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    /* This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default) */
+    /* This is the simpler way of animating, when keyframes are not neccesary */
+    transition: all 0.2s;
+    /* all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds */
+    position: relative;
+    /* This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set) */
+    font-size: 1.6rem; }
+  .btn:hover {
+    transform: translateY(-3px);
+    /* negtative (-) because postive would mean going away from the Y axis into the element more (so down), negative means up and out of the element */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    /* x-offset y-offset blur color */
+    /* ::after styles will occur when btn is hovered */ }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      /* Since this is gonna be for an animation, we have to set a transition on the initial state */
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-1px);
+    /* Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked. */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    /* 100% of the height of .btn */
+    width: 100%;
+    /* 100% of the height of .btn */
+    border-radius: 10rem;
+    /* Mimic the dimensions of the original button */
+    position: absolute;
+    top: 0;
+    /* Coordinates defined based on the nearest parent with position: relative (so .btn) */
+    left: 0;
+    z-index: -1;
+    /* Set behind the real button so it does not cover the text */
+    transition: all 0.4s; }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+    .btn--white::after {
+      background-color: #fff; }
+  .btn--animated {
+    animation: moveInBottom 1.7s ease-out 0.75s;
+    /* name, duration, animation-timing-function, delay */
+    animation-fill-mode: backwards;
+    /* This will automatically apply the values of the 0% keyframe before the animations starts */ }
 
 @keyframes moveInLeft {
   0% {
@@ -142,12 +163,6 @@
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
-.btn--animated {
-  animation: moveInBottom 1.7s ease-out 0.75s;
-  /* name, duration, animation-timing-function, delay */
-  animation-fill-mode: backwards;
-  /* This will automatically apply the values of the 0% keyframe before the animations starts */ }
 
 @keyframes moveInBottom {
   0% {
