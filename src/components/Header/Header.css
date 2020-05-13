@@ -18,14 +18,25 @@
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute; /* Positioned absolutely based on the top left corner of its parent element (.header) */
   top: 4rem; /* 40px away from the top of the parent element (.header) */
   left: 4rem; /* 40px away from the left side of the parent element (.header) */
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%; /* The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off center*/
+  left: 50%; /* The left side of the box will be 50% away from the left side of the parent (.element) */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* The box will be shifted half it's width to the left and up, to allow for true centering */
+  text-align: center; /* This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline) */
 }
 
 .heading-primary {
@@ -36,7 +47,7 @@
   margin-bottom: 6rem; /* To distance the button from the heading */
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block; /* Span elements are inline by default, so making it block will allow for a main title and subtitle */
   font-size: 6rem;
   font-weight: 400;
@@ -52,24 +63,13 @@
   */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block; /* Displayed as block to show underneath the main title */
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1.75rem;
 
   animation: moveInRight 1s ease-out;
-}
-
-.text-box {
-  position: absolute;
-  top: 40%; /* The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off center*/
-  left: 50%; /* The left side of the box will be 50% away from the left side of the parent (.element) */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* The box will be shifted half it's width to the left and up, to allow for true centering */
-  text-align: center; /* This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline) */
 }
 
 /* link and visited are pseudo-classes, so we write the style for these specific states of the anchor element */
@@ -116,7 +116,7 @@
   transition: all 0.4s;
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -167,7 +167,7 @@
   }
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1.7s ease-out 0.75s; /* name, duration, animation-timing-function, delay */
   animation-fill-mode: backwards; /* This will automatically apply the values of the 0% keyframe before the animations starts */
 }
