@@ -1,0 +1,40 @@
+// class selector instal of default header element
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../images/hero.jpg); // Specified 2 background-image properties. First gradient, then image
+  background-size: cover; // Background will always fit within the element
+  background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0 100%
+  ); // Defines corners of the element from top left going clockwise
+  position: relative;
+
+  &__logo-box {
+    position: absolute; // Positioned absolutely based on the top left corner of its parent element (.header)
+    top: 4rem; // 40px away from the top of the parent element (.header)
+    left: 4rem; // 40px away from the left side of the parent element (.header)
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%; // The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off cente
+    left: 50%; // The left side of the box will be 50% away from the left side of the parent (.element)
+    transform: translate(
+      -50%,
+      -50%
+    ); // The box will be shifted half it's width to the left and up, to allow for true centering
+    text-align: center; // This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline)
+  }
+}

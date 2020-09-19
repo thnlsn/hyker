@@ -1,0 +1,65 @@
+.btn {
+  // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    display: inline-block; // This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default)
+    // This is the simpler way of animating, when keyframes are not neccesary
+    transition: all 0.2s; // all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds
+    position: relative; // This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set)
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(
+      -3px
+    ); // negtative (-) because postive would mean going away from the Y axis into the element more (so down), negative means up and out of the element
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2); // x-offset y-offset blur color
+
+    // ::after styles will occur when btn is hovered
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6); // Since this is gonna be for an animation, we have to set a transition on the initial state
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(
+      -1px
+    ); // Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked.
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  // ::active is a pseudo-element, it is not in the html markup, but it does exist on the page
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%; // 100% of the height of .btn
+    width: 100%; // 100% of the height of .btn
+    border-radius: 10rem; // Mimic the dimensions of the original button
+
+    position: absolute;
+    top: 0; // Coordinates defined based on the nearest parent with position: relative (so .btn)
+    left: 0;
+    z-index: -1; // Set behind the real button so it does not cover the text
+
+    transition: all 0.4s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--animated {
+    animation: moveInBottom 1.7s ease-out 0.75s; // name, duration, animation-timing-function, delay
+    animation-fill-mode: backwards; // This will automatically apply the values of the 0% keyframe before the animations starts
+  }
+}
