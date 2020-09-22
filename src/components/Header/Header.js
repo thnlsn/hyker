@@ -17,7 +17,7 @@ const Header = () => {
           <span className='heading-primary--main'>Outdoors</span>
           <span className='heading-primary--sub'>is where life happens</span>
         </h1>
-        {/* Notice the non-usage of the button element */}
+        {/* Notice the non-usage of the button element, instead using classes to create button effect */}
         <a href='#' className='btn btn--white btn--animated'>
           Discover our services
         </a>
