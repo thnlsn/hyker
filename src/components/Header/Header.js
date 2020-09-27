@@ -1,5 +1,3 @@
-// Top section of the webapp
-
 import React from 'react';
 import '../../css/style.css';
 
