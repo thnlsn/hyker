@@ -25,6 +25,7 @@ const Header = () => {
         </div>
       </header>
 
+      {/* Custom grid */}
       <section className='grid-test'>
         <div className='row'>
           <div className='col-1-of-2'>Col 1 of 2</div>
