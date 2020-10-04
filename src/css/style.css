@@ -1,3 +1,4 @@
+/* Style imports */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -28,6 +29,8 @@
     opacity: 1;
     transform: translateY(0); } }
 
+/* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
+/* * only affects strict elements, and not pseudo-elements, so we include those in the reset */
 *,
 *::after,
 *::before {
@@ -114,6 +117,12 @@ body {
 .btn--animated {
   animation: moveInBottom 1.7s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto;
+  margin-bottom: 80px; }
 
 .header {
   height: 95vh;

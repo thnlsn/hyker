@@ -1,1 +1,11 @@
 // This file is a partial (it was named leading with a _) which tells Sass that this should not be generated into a CSS file, and instead included in one by importing
+
+.row {
+  // Standard used is to have rows be 1140px, but we use the rem equal to allow for more fluid design
+  // max-width
+  max-width: 114rem;
+  background-color: #eee;
+  // This sets both the left and right margins to auto, which means they will be the same, whatever that is (meaning it will be centered)
+  margin: 0 auto;
+  margin-bottom: 80px;
+}

@@ -2,6 +2,8 @@
 
 // This is for the low level basics, such as resets and styles for html and body.
 
+/* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
+/* * only affects strict elements, and not pseudo-elements, so we include those in the reset */
 *,
 *::after,
 *::before {
