@@ -11,9 +11,9 @@
 }
 
 html {
-  // This is being set for the purpose of easy rem calculations throughout the application
+  // This is being set for the purpose of easy rem calculations (font, images, styles etc.) throughout the application
   // Browser default size is 16px, but we want to set it to a percentage in case people with bad eyes have a different default
-  // The percentage is 62.5% because it equates to 10px assuming the 16px default
+  // The percentage is 62.5% because it equates to 10px (which will make rem calculations easy) assuming the 16px default
 
   // This defines what 1rem is
   font-size: 62.5%;
