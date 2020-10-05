@@ -17,6 +17,9 @@
   .col-1-of-2 {
     // Use built in CSS function calc() because it can mix units (rem & %) since it is calculated during the Visual Formatting Model phase since it is at that point that all units have been calculated as px (so in reality your are calculating px and not actually mixing units)
     // Sass cannot do this because it compiles prior to tha above mention phase, when final sizes are not known in px
-    width: calc();
+    width: calc(
+      (100% - #{$gutter-horizontal}) / 2
+    ); // We take 100% of the width and minus the gutters on the sides, then divide by 2 because it is a 1 of 2 row, meaning 2 halves
+    // The #{} wrapping the Sass variable is just neccesary syntax to work within CSS functions like calc()
   }
 }
