@@ -25,6 +25,7 @@
     background-color: orangered;
 
     &:not(:last-child) {
+      // So that the last column does not have extra white space making the grid look off center
       margin-right: $gutter-horizontal;
     }
   }
