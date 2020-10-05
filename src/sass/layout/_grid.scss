@@ -15,6 +15,8 @@
   }
 
   .col-1-of-2 {
+    // Use built in CSS function calc() because it can mix units (rem & %) since it is calculated during the Visual Formatting Model phase since it is at that point that all units have been calculated as px (so in reality your are calculating px and not actually mixing units)
+    // Sass cannot do this because it compiles prior to tha above mention phase, when final sizes are not known in px
     width: calc();
   }
 }
