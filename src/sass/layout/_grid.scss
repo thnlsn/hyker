@@ -17,6 +17,7 @@
   // Clearfix is required on the rows because all the child elements are being floated, so their heights would collapse to 0px and they will all appear on top of each other
   @include clearfix();
 
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .col-1-of-2 {
     // Use built in CSS function calc() because it can mix units (rem & %) since it is calculated during the Visual Formatting Model phase since it is at that point that all units have been calculated as px (so in reality your are calculating px and not actually mixing units)
     // Sass cannot do this because it compiles prior to tha above mention phase, when final sizes are not known in px
@@ -34,4 +35,42 @@
       margin-right: $gutter-horizontal;
     }
   }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  .col-1-of-3 {
+    // We multiply the horizontal gutter by 2 because there will be at least 2 gutters in a 3 column row
+    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+
+    background-color: orangered;
+
+    float: left;
+
+    &:not(:last-child) {
+      // So that the last column does not have extra white space making the grid look off center
+      margin-right: $gutter-horizontal;
+    }
+  }
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  .col-2-of-3 {
+    // We multiply the horizontal gutter by 2 because there will be at least 2 gutters in a 3 column row
+    width: calc(100% - (#{$gutter-horizontal}) / 0.15);
+
+    background-color: orangered;
+
+    float: left;
+
+    &:not(:last-child) {
+      // So that the last column does not have extra white space making the grid look off center
+      margin-right: $gutter-horizontal;
+    }
+  }
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

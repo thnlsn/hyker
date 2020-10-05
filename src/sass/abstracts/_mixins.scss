@@ -1,4 +1,6 @@
+// Mixins are reusable pieces of code that can be included in other css
 @mixin clearfix {
+  // & will translate to whatever css selector we are within when we call the mixin then it will add ::after to that
   &::after {
     // Set content property otherwise pseudo elements will not appear on the page, it is empty because we dont actually want to see it
     content: '';
