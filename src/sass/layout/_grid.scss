@@ -55,9 +55,16 @@
   }
 
   .col-2-of-4 {
-    // We multiply the horizontal gutter by 3 because there will be at least 3 gutters in a 4 column row
     width: calc(
       (((100% - (#{$gutter-horizontal} * 3)) / 4) * 2) + #{$gutter-horizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    // We multiply the horizontal gutter by 3 because there will be at least 3 gutters in a 4 column row
+    width: calc(
+      (((100% - (#{$gutter-horizontal} * 3)) / 4) * 3) +
+        (#{$gutter-horizontal} * 2)
     );
   }
 }
