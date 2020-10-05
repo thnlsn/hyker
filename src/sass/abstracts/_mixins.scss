@@ -1,0 +1,10 @@
+@mixin clearfix {
+  &::after {
+    // Set content property otherwise pseudo elements will not appear on the page, it is empty because we dont actually want to see it
+    content: '';
+    // display: table is simply the standard for a clearfix hack
+    display: table;
+    // We float both to make this mixin more reuseable, so it will clear float right AND left, so it will be useful for both scenarios
+    clear: both;
+  }
+}
