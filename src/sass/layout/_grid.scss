@@ -2,10 +2,19 @@
 
 .row {
   // Standard used is to have rows be 1140px, but we use the rem equal to allow for more fluid design
-  // max-width
-  max-width: 114rem;
+  // max-width is set instead of just width because max-width only uses the declared amout if there is space, if not, it takes up 100% of the space (so it will adjust based on viewport)
+  max-width: $grid-width;
   background-color: #eee;
   // This sets both the left and right margins to auto, which means they will be the same, whatever that is (meaning it will be centered)
   margin: 0 auto;
-  margin-bottom: 80px;
+
+  // This is the same as saying .row:not()
+  // :not selector selects EVERYTHING other than what is in the pseudo-class (in this case :last-child)
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  .col-1-of-2 {
+    width: calc();
+  }
 }
