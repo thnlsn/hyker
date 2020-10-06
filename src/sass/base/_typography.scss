@@ -46,4 +46,8 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
+
+  display: inline-block;
+
+  @include text-gradient(45deg, $color-primary-light, $color-primary-dark);
 }
