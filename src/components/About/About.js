@@ -15,7 +15,28 @@ const About = () => {
           </div>
 
           <div className='row'>
-            <div className='col-1-of-2'>Text content</div>
+            <div className='col-1-of-2'>
+              <h3 className='heading-tertiary'>
+                You're going to fall in love with nature
+              </h3>
+              <p className='paragraph'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maiores accusamus molestias distinctio velit deleniti quia cum
+                praesentium, officia harum voluptatem quam, doloremque,
+                assumenda rem iusto quas accusantium dolor? Exercitationem,
+                voluptatum.
+              </p>
+              <h3 className='heading-tertiary'>
+                Live adventurous and make new friends!
+              </h3>
+              <p className='paragraph'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maiores accusamus molestias distinctio velit deleniti quia cum
+                praesentium, officia harum voluptatem quam, doloremque,
+                assumenda rem iusto quas accusantium dolor? Exercitationem,
+                voluptatum.
+              </p>
+            </div>
             <div className='col-1-of-2'>Image</div>
           </div>
         </section>
