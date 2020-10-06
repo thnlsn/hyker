@@ -1,0 +1,7 @@
+// This class is for the about section but it does in the _home file because it is specific to the home page
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  // Negative margin moves the box up and behind the header polygon because it created ugly white space since even a polygon is really a box
+  margin-top: -20vh;
+}
