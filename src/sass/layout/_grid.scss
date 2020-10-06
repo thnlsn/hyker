@@ -4,7 +4,7 @@
   // Standard used is to have rows be 1140px, but we use the rem equal to allow for more fluid design
   // max-width is set instead of just width because max-width only uses the declared amout if there is space, if not, it takes up 100% of the space (so it will adjust based on viewport)
   max-width: $grid-width;
-  background-color: #eee;
+
   // This sets both the left and right margins to auto, which means they will be the same, whatever that is (meaning it will be centered)
   margin: 0 auto;
 
@@ -20,7 +20,6 @@
   // We use class instead of Reacts className because when everything compiles down, it will all become class
   // This bracket based selector allows you to select an attribute, so in this case, all classes that BEGIN (^) with col-
   [class^='col-'] {
-    background-color: orangered;
     float: left;
     &:not(:last-child) {
       // So that the last column does not have extra white space making the grid look off center
