@@ -46,8 +46,13 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-
   display: inline-block;
 
   @include text-gradient(45deg, $color-primary-light, $color-primary-dark);
+
+  // heading-secondary:hover
+  &:hover {
+    // skew stretches the element in opposite directions along the stated axis (x or y), while scale just makes it larger
+    transform: skewY(0.5deg) skewX(2deg) scale(1.05);
+  }
 }
