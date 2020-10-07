@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import '../../css/style.css';
 
 // Images for use in the three image composition
-const p1 = require('../../images/nat-1.jpg');
-const p2 = require('../../images/nat-2.jpg');
-const p3 = require('../../images/nat-3.jpg');
+const p1 = require('../../images/nat-1-large.jpg');
+const p2 = require('../../images/nat-2-large.jpg');
+const p3 = require('../../images/nat-3-large.jpg');
 
 // About Section
 const About = () => {
