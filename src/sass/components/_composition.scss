@@ -1,19 +1,27 @@
 .composition {
   position: relative;
 
+  &:hover {
+    .composition__photo {
+      opacity: 0.2;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute; // Will be set abolutely, relative to nearest parent with position: relative\
-
-    background-color: transparent;
-
-    transition: 0.2s;
+    z-index: 10;
+    transition: 0.6s, 0.2s;
 
     &:hover {
-      border: 1rem solid $color-primary;
-      transform: scale(1.2);
+      transform: scale(1.4);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
     }
 
     &--p1 {
