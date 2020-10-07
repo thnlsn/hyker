@@ -48,6 +48,8 @@ body {
   text-transform: uppercase;
   display: inline-block;
 
+  transition: all 0.05s;
+
   @include text-gradient(45deg, $color-primary-light, $color-primary-dark);
 
   // heading-secondary:hover

@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
+// Images for use in the three image composition
+const p1 = require('../../images/nat-1.jpg');
+const p2 = require('../../images/nat-2.jpg');
+const p3 = require('../../images/nat-3.jpg');
+
 // About Section
 const About = () => {
   return (
@@ -42,17 +47,17 @@ const About = () => {
             <div className='col-1-of-2'>
               <div className='composition'>
                 <img
-                  src='img/nat-1.jpg'
+                  src={p1}
                   alt='Photo 1'
                   className='composition__photo composition__photo--p1'
                 />
                 <img
-                  src='img/nat-2.jpg'
+                  src={p2}
                   alt='Photo 2'
                   className='composition__photo composition__photo--p2'
                 />
                 <img
-                  src='img/nat-3.jpg'
+                  src={p3}
                   alt='Photo 3'
                   className='composition__photo composition__photo--p3'
                 />
