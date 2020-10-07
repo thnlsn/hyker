@@ -178,7 +178,21 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    background-color: transparent;
+    transition: 0.2s; }
+    .composition__photo:hover {
+      border: 1rem solid #55c57a;
+      transform: scale(1.2); }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
 
 .row {
   max-width: 114rem;
