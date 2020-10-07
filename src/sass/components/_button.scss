@@ -1,4 +1,5 @@
 // This file is a partial (it was named leading with a _) which tells Sass that this should not be generated into a CSS file, and instead included in one by importing
+
 .btn {
   // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
   &:link,
@@ -11,7 +12,7 @@
     // This is the simpler way of animating, when keyframes are not neccesary
     transition: all 0.2s; // all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds
     position: relative; // This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set)
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &:hover {
@@ -62,5 +63,27 @@
   &--animated {
     animation: moveInBottom 1.7s ease-out 0.75s; // name, duration, animation-timing-function, delay
     animation-fill-mode: backwards; // This will automatically apply the values of the 0% keyframe before the animations starts
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block; // So we can use box model properties on it (padding, margins, etc.)
+    text-decoration: none;
+    // Very small units like the following two do not have to be rem because we don't want things like this to change when the base font size changes
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+  }
+
+  &:active {
   }
 }

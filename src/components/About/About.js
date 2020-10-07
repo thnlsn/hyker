@@ -34,6 +34,8 @@ const About = () => {
                 omnis corporis et sequi amet. Delectus aut fugiat labore quidem
                 atque explicabo enim? Sapiente, eum.
               </p>
+
+              <a href='#'>Learn more &rarr;</a>
             </div>
             <div className='col-1-of-2'>Image</div>
           </div>
