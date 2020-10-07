@@ -54,6 +54,7 @@ body {
   &:hover {
     // skew stretches the element in opposite directions along the stated axis (x or y), while scale just makes it larger
     transform: skewY(0.5deg) skewX(2deg) scale(1.05);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
