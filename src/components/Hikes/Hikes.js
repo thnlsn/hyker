@@ -13,19 +13,25 @@ const Hikes = () => {
           <div className='col-1-of-3'>
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
-              <div className='card__side card__side--back'>TEXT</div>
+              <div className='card__side card__side--back card__side--back-1'>
+                TEXT
+              </div>
             </div>
           </div>
           <div className='col-1-of-3'>
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
-              <div className='card__side card__side--back'>TEXT</div>
+              <div className='card__side card__side--back card__side--back-2'>
+                TEXT
+              </div>
             </div>
           </div>
           <div className='col-1-of-3'>
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
-              <div className='card__side card__side--back'>TEXT</div>
+              <div className='card__side card__side--back card__side--back-3'>
+                TEXT
+              </div>
             </div>
           </div>
         </div>
