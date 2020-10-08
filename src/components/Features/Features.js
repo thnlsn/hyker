@@ -14,20 +14,26 @@ const Features = () => {
               heading='Explore the world'
               text='Officiis iusto atque dolore deleniti repellat blanditiis perspiciatis omnis quos!'
             />
+          </div>
+          <div className='col-1-of-4'>
             <FeatureBox
-              icon='icon-basic-world'
+              icon='icon-basic-compass'
               heading='Be one with nature'
-              text='Dolore eligendi velit saepe alias possimus voluptates autem id quod corporis expedita!'
+              text='Dolore eligendi velit saepe alias possimus voluptates autem id corporis expedita!'
             />
+          </div>
+          <div className='col-1-of-4'>
             <FeatureBox
-              icon='icon-basic-world'
+              icon='icon-basic-map'
               heading='Discover your path'
-              text='Iusto, facilis nihil sint suscipit officia cum molestias perferendis libero eaque!'
+              text='Iusto, facilis nihil sint suscipit officia molestias perferendis libero eaque!'
             />
+          </div>
+          <div className='col-1-of-4'>
             <FeatureBox
-              icon='icon-basic-world'
+              icon='icon-basic-heart'
               heading='Lead a healthier life'
-              text='Vitae libero cum cupiditate pariatur exercitationem consequatur? Possimus nesciunt nemo saepe excepturi.'
+              text='Vitae libero pariatur  sequatur? Possimus nemo saepe excepturi.'
             />
           </div>
         </div>
