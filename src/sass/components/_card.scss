@@ -4,24 +4,26 @@
 
   position: relative;
 
+  height: 50rem;
+
   &__side {
-    background-color: orangered;
     color: #fff;
     font-size: 2rem;
 
     height: 50rem;
-    transition: all 0.8s;
+    transition: all 0.8s ease;
 
-    position: absolute;
+    // Positioned absolutely based on the card class, since it full encompasses
+    position: absolute; // on the card__side div because it is the one that is common between --front and --back
     top: 0;
     left: 0;
 
     width: 100%;
 
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
 
     &--front {
-      background-color: orangered;
+      background-color: $color-white;
     }
 
     &--back {
