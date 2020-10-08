@@ -272,7 +272,7 @@ body {
 
 .section-features {
   height: 95vh;
-  padding: 20rem 1rem;
+  padding: 20rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/nat-4.jpg);
   background-size: cover;
   /*   background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
