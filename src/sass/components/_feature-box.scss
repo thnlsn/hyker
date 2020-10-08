@@ -1,4 +1,14 @@
 .feature-box {
+  background-color: rgba(
+    $color-white,
+    0.8
+  ); // 0.8 is how opaque you want it, so .2 percent invisible
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-emphasis: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
   &__icon {
   }
 

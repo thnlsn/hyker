@@ -5,3 +5,25 @@
   // Negative margin moves the box up and behind the header polygon because it created ugly white space since even a polygon is really a box
   margin-top: -20vh;
 }
+
+.section-features {
+  height: 95vh;
+  padding: 20rem 0;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../images/nat-4.jpg);
+
+  background-size: cover; // Background will always fit within the element
+  background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
+  clip-path: polygon(
+    0 15vh,
+    100% 0,
+    100% 85vh,
+    0 100%
+  ); // Defines corners of the element from top left going clockwise
+  position: relative;
+}
