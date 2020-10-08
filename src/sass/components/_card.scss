@@ -1,0 +1,39 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; // So that it will work in Mozilla Firefox
+
+  position: relative;
+
+  &__side {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+
+    height: 50rem;
+    transition: all 0.8s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    /* backface-visibility: hidden; */
+
+    &--front {
+      background-color: orangered;
+    }
+
+    &--back {
+      background-color: green;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
