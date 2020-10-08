@@ -6,6 +6,7 @@
   margin-top: -20vh;
 }
 
+// This class is for the features section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
 .section-features {
   height: 95vh;
   padding: 20rem 0;
@@ -21,6 +22,9 @@
 
   // clip-path: polygon() would achieve the effect of the tilted container, but this is another way
   transform: skewY(-7deg);
+
+  // This is to move up the skewed section to hide the white box background
+  margin-top: -12rem;
 
   // This is the direct child (>) selector, selecting EVERYTHING (*)
   // Basically this is unskewing everything inside the DIRECT (first) child (which is the 'row' div) of the section-features
