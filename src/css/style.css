@@ -29,15 +29,6 @@
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes compositionOpacity {
-  0% {
-    opacity: 1; }
-  20% {
-    opacity: 0.4; }
-  100% {
-    opacity: 0.2;
-    transform: scale(0.8); } }
-
 /* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
 /* * only affects strict elements, and not pseudo-elements, so we include those in the reset */
 *,
@@ -210,6 +201,14 @@ body {
     opacity: 0.2;
     transform: scale(0.8); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-emphasis: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -266,6 +265,11 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/nat-4.jpg);
   background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 15vh, 100% 0, 100% 85vh, 0 100%);
-  position: relative; }
+  /*   background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
+  clip-path: polygon(
+    0 15vh,
+    100% 0,
+    100% 85vh,
+    0 100%
+  ); // Defines corners of the element from top left going clockwise
+  position: relative; */ }
