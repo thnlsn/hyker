@@ -15,7 +15,11 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <About />
+      {/* The "main" element is purely semantic, it is used as the wrapper for the sections between the header and footer, or the "main" bulk of your page content */}
+      <main>
+        <About />
+        <Features />
+      </main>
     </div>
   );
 }

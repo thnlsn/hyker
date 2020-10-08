@@ -10,79 +10,58 @@ const p3 = require('../../images/nat-3-large.jpg');
 const About = () => {
   return (
     <Fragment>
-      {/* The "main" element is purely semantic, it is used as the wrapper for the sections between the header and footer, or the "main" bulk of your page content */}
-      <main>
-        <section className='section-about'>
-          <div className='u-center-text u-margin-bottom-large'>
-            <h2 className='heading-secondary'>
-              Exciting hikes for the adventurous!
-            </h2>
+      <section className='section-about'>
+        <div className='u-center-text u-margin-bottom-large'>
+          <h2 className='heading-secondary'>
+            Exciting hikes for the adventurous!
+          </h2>
+        </div>
+
+        <div className='row'>
+          <div className='col-1-of-2'>
+            <h3 className='heading-tertiary u-margin-bottom-small'>
+              You're going to fall in love with nature
+            </h3>
+            <p className='paragraph'>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+              accusamus molestias distinctio velit deleniti quia cum
+              praesentium, officia harum voluptatem quam, doloremque, assumenda
+              rem iusto quas accusantium dolor? Exercitationem, voluptatum.
+            </p>
+            <h3 className='heading-tertiary u-margin-bottom-small'>
+              Live adventurous and make new friends!
+            </h3>
+            <p className='paragraph'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vel
+              omnis corporis et sequi amet. Delectus aut fugiat labore quidem
+              atque explicabo enim? Sapiente, eum.
+            </p>
+
+            <a className='btn-text' href='#'>
+              Learn more &rarr;
+            </a>
           </div>
-
-          <div className='row'>
-            <div className='col-1-of-2'>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
-                You're going to fall in love with nature
-              </h3>
-              <p className='paragraph'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Maiores accusamus molestias distinctio velit deleniti quia cum
-                praesentium, officia harum voluptatem quam, doloremque,
-                assumenda rem iusto quas accusantium dolor? Exercitationem,
-                voluptatum.
-              </p>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
-                Live adventurous and make new friends!
-              </h3>
-              <p className='paragraph'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vel
-                omnis corporis et sequi amet. Delectus aut fugiat labore quidem
-                atque explicabo enim? Sapiente, eum.
-              </p>
-
-              <a className='btn-text' href='#'>
-                Learn more &rarr;
-              </a>
-            </div>
-            <div className='col-1-of-2'>
-              <div className='composition'>
-                <img
-                  src={p1}
-                  alt='Photo 1'
-                  className='composition__photo composition__photo--p1'
-                />
-                <img
-                  src={p2}
-                  alt='Photo 2'
-                  className='composition__photo composition__photo--p2'
-                />
-                <img
-                  src={p3}
-                  alt='Photo 3'
-                  className='composition__photo composition__photo--p3'
-                />
-              </div>
+          <div className='col-1-of-2'>
+            <div className='composition'>
+              <img
+                src={p1}
+                alt='Photo 1'
+                className='composition__photo composition__photo--p1'
+              />
+              <img
+                src={p2}
+                alt='Photo 2'
+                className='composition__photo composition__photo--p2'
+              />
+              <img
+                src={p3}
+                alt='Photo 3'
+                className='composition__photo composition__photo--p3'
+              />
             </div>
           </div>
-        </section>
-
-        <section className='section-features'>
-          <row className=''>
-            <div className='col-1-of-4'>
-              <div className='feature-box'>
-                <i className='feature-box__icon icon-basic-world'></i>
-                <h3 className='heading-tertiary'>Explore the world</h3>
-                <p className='feature-box__text'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem, molestias? Officiis iusto atque dolore deleniti
-                  repellat blanditiis perspiciatis omnis quos! Quibusdam autem
-                  obcaecati quia nisi labore optio facilis expedita ut?
-                </p>
-              </div>
-            </div>
-          </row>
-        </section>
-      </main>
+        </div>
+      </section>
     </Fragment>
   );
 };
