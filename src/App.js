@@ -19,6 +19,10 @@ function App() {
       <main>
         <About />
         <Features />
+        <Hikes />
+        <Stories />
+        <Booking />
+        <Footer />
       </main>
     </div>
   );
