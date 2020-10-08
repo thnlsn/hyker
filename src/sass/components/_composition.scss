@@ -11,11 +11,11 @@
     outline-offset: 2rem;
 
     &--p1 {
-      left: 0;
+      left: 0.25rem;
       top: -2rem;
     }
     &--p2 {
-      right: 0;
+      right: 0.25rem;
       top: 2rem;
     }
     &--p3 {
@@ -25,7 +25,7 @@
 
     &:hover {
       outline: 1.5rem solid $color-primary;
-      transform: scale(1.4);
+      transform: scale(1.4) translateY(-5px);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
     }
@@ -34,7 +34,7 @@
   // Select the composition element when hovered, but select only the composition__photo elements that are NOT hovered
   // Essentially all the elements of the composition that aren't hovered
   &:hover &__photo:not(:hover) {
-    transition: 0.4s;
+    transition: 0.3s;
     opacity: 0.2;
     transform: scale(0.8);
   }

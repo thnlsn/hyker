@@ -192,21 +192,21 @@ body {
     transition: 0.2s;
     outline-offset: 2rem; }
     .composition__photo--p1 {
-      left: 0;
+      left: 0.25rem;
       top: -2rem; }
     .composition__photo--p2 {
-      right: 0;
+      right: 0.25rem;
       top: 2rem; }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
-      transform: scale(1.4);
+      transform: scale(1.4) translateY(-5px);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
-    transition: 0.4s;
+    transition: 0.3s;
     opacity: 0.2;
     transform: scale(0.8); }
 
