@@ -18,12 +18,13 @@
     url(../images/nat-4.jpg);
 
   background-size: cover; // Background will always fit within the element
-  /*   background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
-  clip-path: polygon(
-    0 15vh,
-    100% 0,
-    100% 85vh,
-    0 100%
-  ); // Defines corners of the element from top left going clockwise
-  position: relative; */
+
+  // clip-path: polygon() would achieve the effect of the tilted container, but this is another way
+  transform: skewY(-7deg);
+
+  // This is the direct child (>) selector, selecting EVERYTHING (*)
+  // Basically this is unskewing everything inside the DIRECT (first) child (which is the 'row' div) of the section-features
+  & > * {
+    transform: skewY(7deg);
+  }
 }
