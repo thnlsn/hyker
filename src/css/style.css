@@ -29,6 +29,15 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes compositionOpacity {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0.4; }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8); } }
+
 /* Reset CSS (browsers enforce default margins/paddings differently, so we forcfully set it all to 0 first)*/
 /* * only affects strict elements, and not pseudo-elements, so we include those in the reset */
 *,
@@ -180,7 +189,7 @@ body {
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: 0.6s, 0.2s;
+    transition: 0.2s;
     outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 0;
@@ -197,6 +206,7 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
+    transition: 0.4s;
     opacity: 0.2;
     transform: scale(0.8); }
 

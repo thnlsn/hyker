@@ -1,15 +1,13 @@
 .composition {
   position: relative;
 
-  // A#####
-
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute; // Will be set abolutely, relative to nearest parent with position: relative\
     z-index: 10;
-    transition: 0.6s, 0.2s;
+    transition: 0.2s;
     outline-offset: 2rem;
 
     &--p1 {
@@ -36,6 +34,7 @@
   // Select the composition element when hovered, but select only the composition__photo elements that are NOT hovered
   // Essentially all the elements of the composition that aren't hovered
   &:hover &__photo:not(:hover) {
+    transition: 0.4s;
     opacity: 0.2;
     transform: scale(0.8);
   }
