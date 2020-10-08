@@ -11,7 +11,9 @@ const Features = () => {
             <div className='feature-box'>
               {/* Create a box within the grid because we want to edit some spacing and add scaling, but don't want to directly edit the grid code */}
               <i className='feature-box__icon icon-basic-world'></i>
-              <h3 className='heading-tertiary'>Explore the world</h3>
+              <h3 className='heading-tertiary u-margin-bottom-small'>
+                Explore the world
+              </h3>
               <p className='feature-box__text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem, molestias? Officiis iusto atque dolore deleniti
