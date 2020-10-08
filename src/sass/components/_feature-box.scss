@@ -3,15 +3,22 @@
     $color-white,
     0.8
   ); // 0.8 is how opaque you want it, so .2 percent invisible
-  font-size: 1.5rem;
+  font-size: 1.5rem; // The __text child of this element inherits this font-size
   padding: 2.5rem;
-  text-emphasis: center;
+  text-align: center; // All children inherit this
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
+  transition: transform 0.3s;
+
   &__icon {
+    font-size: 6rem; // This is an icon, but works effectively as a font
+    margin-bottom: 0.5rem;
+    display: inline-block; // Because we want the gradient to go from one side to the other only
+    @include text-gradient(90deg, $color-primary-light, $color-primary-dark);
   }
 
-  &__text {
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
   }
 }
