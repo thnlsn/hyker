@@ -9,8 +9,6 @@
 
   // COMMON TO ALL CARDS
   &__side {
-    font-size: 2rem;
-
     height: 50rem;
     transition: all 0.8s ease;
 
@@ -75,7 +73,8 @@
   &__picture {
     background-size: cover; // Setting it here so it applies to
     height: 23rem;
-
+    // webkit is a prefix for different browsers that might not yet support more modern css properties such as this
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
@@ -110,5 +109,18 @@
         url(../images/nat-7.jpg);
       background-blend-mode: screen;
     }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    background: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
   }
 }

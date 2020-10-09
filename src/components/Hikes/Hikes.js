@@ -16,7 +16,7 @@ const Hikes = () => {
             <div className='card'>
               <div className='card__side card__side--front'>
                 <div className='card__picture card__picture--1'>&nbsp;</div>
-                <div className='card__heading'>Heading</div>
+                <div className='card__heading'>The Oceanside Explorer</div>
                 <div className='card__details'>Details</div>
               </div>
               <div className='card__side card__side--back card__side--back-1'>
@@ -29,7 +29,7 @@ const Hikes = () => {
               <div className='card__side card__side--front'>
                 {' '}
                 <div className='card__picture card__picture--2'>&nbsp;</div>
-                <div className='card__heading'>Heading</div>
+                <div className='card__heading'>The Deep Forest Adventurer</div>
                 <div className='card__details'>Details</div>
               </div>
               <div className='card__side card__side--back card__side--back-2'>
@@ -42,7 +42,7 @@ const Hikes = () => {
               <div className='card__side card__side--front'>
                 {' '}
                 <div className='card__picture card__picture--3'>&nbsp;</div>
-                <div className='card__heading'>Heading</div>
+                <h4 className='card__heading'>The Tundra Bound Traveler</h4>
                 <div className='card__details'>Details</div>
               </div>
               <div className='card__side card__side--back card__side--back-3'>
