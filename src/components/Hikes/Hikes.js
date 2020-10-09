@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
+import Card from './Card/Card';
+
 // Hikes Section
 const Hikes = () => {
   return (
@@ -21,7 +23,15 @@ const Hikes = () => {
                     The Ocean Explorer
                   </span>
                 </h4>
-                <div className='card__details'>Details</div>
+                <div className='card__details'>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
               </div>
               <div className='card__side card__side--back card__side--back-1'>
                 only
