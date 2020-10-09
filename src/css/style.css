@@ -225,7 +225,6 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    color: #fff;
     font-size: 2rem;
     height: 50rem;
     transition: all 0.8s ease;
@@ -234,6 +233,7 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
@@ -250,6 +250,19 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/nat-5.jpg);
+      background-blend-mode: screen; }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/nat-6.jpg);
+      background-blend-mode: screen; }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/nat-7.jpg);
+      background-blend-mode: screen; }
 
 .row {
   max-width: 114rem;

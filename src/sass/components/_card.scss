@@ -1,4 +1,5 @@
 .card {
+  // FUNTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem; // So that it will work in Mozilla Firefox
 
@@ -6,8 +7,8 @@
 
   height: 50rem; // Have to declare a height to each card because absolute positioning took the children out of normal flow (like floats), so there is nothing to encompass, so it doesn't
 
+  // COMMON TO ALL CARDS
   &__side {
-    color: #fff;
     font-size: 2rem;
 
     height: 50rem;
@@ -21,7 +22,7 @@
     width: 100%; // We have to declare this because setting absolute positioning collapsed the width since absolute positioned elements are not block level
 
     backface-visibility: hidden; // Because we do not want to see the inverse of the frontside when we are looking at the backside
-
+    overflow: hidden; // Set because the image clips out of the div, so we set anything out to be hidden (so the radius is still seen)
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15); // CREATE VARIABLE FOR THESE SHADOWS LATER
 
@@ -62,11 +63,52 @@
 
   // We simultaniously flip the front and back so it gives the effect of flipping around
   &:hover &__side--front {
-    // Rotate the front side by half a full rotation
+    // Rotate the front side by half a full rotation in the opposite direction
     transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     // We start the back side already rotated, so instead we rotate it to it's 0deg state
     transform: rotateY(0deg);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover; // Setting it here so it applies to
+    height: 23rem;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      // We can se 2 backgrounds, the first is the linear gradient, and the second is the image (but the first will cover the second)
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        // Image path may seem incorrect but it is the path from the style.css in the css folder, since that is where all this sass will compile to.
+        url(../images/nat-5.jpg);
+      background-blend-mode: screen;
+    }
+
+    &--2 {
+      // Image path may seem incorrect but it is the path from the style.css in the css folder, since that is where all this sass will compile to.
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../images/nat-6.jpg);
+      background-blend-mode: screen;
+    }
+    &--3 {
+      // Image path may seem incorrect but it is the path from the style.css in the css folder, since that is where all this sass will compile to.
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../images/nat-7.jpg);
+      background-blend-mode: screen;
+    }
   }
 }
