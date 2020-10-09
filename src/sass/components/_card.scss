@@ -4,7 +4,7 @@
 
   position: relative;
 
-  height: 50rem;
+  height: 50rem; // Have to declare a height to each card because absolute positioning took the children out of normal flow (like floats), so there is nothing to encompass, so it doesn't
 
   &__side {
     color: #fff;
@@ -18,17 +18,19 @@
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 100%; // We have to declare this because setting absolute positioning collapsed the width since absolute positioned elements are not block level
 
-    backface-visibility: hidden;
+    backface-visibility: hidden; // Because we do not want to see the inverse of the frontside when we are looking at the backside
 
     &--front {
       background-color: $color-white;
     }
 
     &--back {
+      // The starting point is flipped to half a rotation worth of degrees (essentially so it is back facing)
       transform: rotateY(180deg);
 
+      // First card
       &-1 {
         background-image: linear-gradient(
           to right bottom,
@@ -36,13 +38,32 @@
           $color-secondary-dark
         );
       }
+      // Second card
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      // Third card
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
     }
   }
 
+  // We simultaniously flip the front and back so it gives the effect of flipping around
   &:hover &__side--front {
+    // Rotate the front side by half a full rotation
     transform: rotateY(180deg);
   }
   &:hover &__side--back {
-    transform: rotateY(0);
+    // We start the back side already rotated, so instead we rotate it to it's 0deg state
+    transform: rotateY(0deg);
   }
 }

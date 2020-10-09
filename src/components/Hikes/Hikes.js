@@ -6,15 +6,17 @@ const Hikes = () => {
   return (
     <Fragment>
       <section className='section-hikes'>
-        <div className='u-center-text u-margin-bottom-big'>
-          <h2 className='heading-secondary'>Most popular hikes</h2>
+        <div className='u-center-text'>
+          <h2 className='heading-secondary u-margin-bottom-large'>
+            Most popular hikes
+          </h2>
         </div>
         <div className='row'>
           <div className='col-1-of-3'>
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
               <div className='card__side card__side--back card__side--back-1'>
-                TEXT
+                only
               </div>
             </div>
           </div>
@@ -22,7 +24,7 @@ const Hikes = () => {
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
               <div className='card__side card__side--back card__side--back-2'>
-                TEXT
+                only
               </div>
             </div>
           </div>
@@ -30,7 +32,7 @@ const Hikes = () => {
             <div className='card'>
               <div className='card__side card__side--front'>TEXT</div>
               <div className='card__side card__side--back card__side--back-3'>
-                TEXT
+                only
               </div>
             </div>
           </div>
