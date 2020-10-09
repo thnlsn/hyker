@@ -269,7 +269,15 @@ body {
     text-transform: uppercase;
     text-align: right;
     color: #fff;
-    background: linear-gradient(to right, #ffb900, #ff7730); }
+    position: absolute;
+    top: 12rem;
+    right: 2rem; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
 
 .row {
   max-width: 114rem;

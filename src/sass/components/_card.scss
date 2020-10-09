@@ -3,7 +3,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem; // So that it will work in Mozilla Firefox
 
-  position: relative;
+  position: relative; // For the card sides to be exact (front & back) but also the heading placement
 
   height: 50rem; // Have to declare a height to each card because absolute positioning took the children out of normal flow (like floats), so there is nothing to encompass, so it doesn't
 
@@ -12,7 +12,7 @@
     height: 50rem;
     transition: all 0.8s ease;
 
-    // Positioned absolutely based on the card class, since it full encompasses
+    // Positioned absolutely based on the card class, since it fully encompasses
     position: absolute; // on the card__side div because it is the one that is common between --front and --back
     top: 0;
     left: 0;
@@ -117,10 +117,26 @@
     text-transform: uppercase;
     text-align: right;
     color: $color-white;
-    background: linear-gradient(
-      to right,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
+
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+  }
+
+  // You could nest it in __heading as &-span, but that is bad BEM practice since it isn't a child or a modifier of __heading
+  &__heading-span {
+    padding: 1rem 1.5rem;
+
+    // "box-decoration-break: clone" applies all declarations (so the padding above) to all boxes created by an element (in this case to apply to all lines of text if it were to break at a slimmer viewport)
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
   }
 }
