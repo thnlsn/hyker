@@ -22,6 +22,9 @@
 
     backface-visibility: hidden; // Because we do not want to see the inverse of the frontside when we are looking at the backside
 
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15); // CREATE VARIABLE FOR THESE SHADOWS LATER
+
     &--front {
       background-color: $color-white;
     }
