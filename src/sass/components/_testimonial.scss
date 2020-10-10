@@ -8,10 +8,14 @@
   padding-left: 9rem;
   font-size: $default-font-size;
 
-  &__image {
+  transform: skewX(-12deg);
+
+  &__shape {
     width: 15rem;
     height: 15rem;
     float: left;
+
+    overflow: hidden; // To hide any bit of the image that might peer through the cracks of the original box around it
 
     // Requires the element to be floated to work: defines an area for which adjacent inline content should wrap around, so we make it equal to the circle
     -webkit-shape-outside: circle(50% at 50% 50%);
@@ -22,9 +26,55 @@
     clip-path: circle(50% at 50% 50%);
 
     // The left padding is 9rem as opposed to the 6rem elsewhere to make space and even the distance for the -3rem that the circle takes up
-    transform: translate(-3rem, 0);
+    transform: translate(-3rem, 0) skewX(12deg); // The skew is to unskew this element from it's parent
+
+    position: relative; // This is for the name caption to be centered absolutely
+  }
+
+  &__image {
+    height: 100%; // 100% of the parent area, which would allow the image to fill the circle correctly, unlike only showing the top corner
+    transform: translateX(-4rem) scale(1.4); // Initial state before animation (zoomed in)
+    backface-visibility: hidden;
+
+    transition: all 0.5s; // For changes in the image hover state
   }
 
   &__text {
+    transform: skewX(
+      12deg
+    ); // The skew is to unskew this element from it's parent
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      20%
+    ); // Positioned lower for initial state (before testimonial is hovered)
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0; // Invisible for initial state (before testimonial is hovered)
+    backface-visibility: hidden; // Fixes tiny visual glitch as pixels try to place themselves
+
+    transition: all 0.5s; // For changes in the caption hover state
+  }
+
+  // When we hover a testimonial, we want only testimonial__caption to change
+  &:hover &__caption {
+    transform: translate(
+      -50%,
+      -50%
+    ); // Setting it to it's -50% state, which is perfectly centered
+    opacity: 1; // Making it visible
+  }
+
+  // When we hover a testimonial, we want only testimonial__image to change
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1);
+    filter: brightness(70%) blur(3px);
   }
 }

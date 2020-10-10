@@ -331,16 +331,44 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem; }
-  .testimonial__image {
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .testimonial__shape {
     width: 15rem;
     height: 15rem;
     float: left;
+    overflow: hidden;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translate(-3rem, 0); }
+    transform: translate(-3rem, 0) skewX(12deg);
+    position: relative; }
+  .testimonial__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s; }
+  .testimonial__text {
+    transform: skewX(12deg); }
+  .testimonial__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: all 0.5s; }
+  .testimonial:hover .testimonial__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .testimonial:hover .testimonial__image {
+    transform: translateX(-4rem) scale(1);
+    filter: brightness(70%) blur(3px); }
 
 .row {
   max-width: 114rem;
