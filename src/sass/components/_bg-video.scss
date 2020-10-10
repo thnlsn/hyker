@@ -1,4 +1,15 @@
 .bg-video {
+  position: absolute; // Taking advantage of the fact that this takes it out of normal flow, so the elements ahead will overlap it and create a background effect
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; // So that it will not overlap the testimonials or button/header
+  opacity: 0.15;
+
   &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; // Fill the whole element while retaining aspect ratio
   }
 }
