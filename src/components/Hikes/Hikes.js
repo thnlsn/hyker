@@ -8,11 +8,10 @@ const Hikes = () => {
   return (
     <Fragment>
       <section className='section-hikes'>
-        <div className='u-center-text'>
-          <h2 className='heading-secondary u-margin-bottom-large'>
-            Most popular hikes
-          </h2>
+        <div className='u-center-text u-margin-bottom-large'>
+          <h2 className='heading-secondary'>Most popular hikes</h2>
         </div>
+
         <div className='row'>
           <div className='col-1-of-3'>
             <Card
@@ -22,7 +21,6 @@ const Hikes = () => {
               price='297'
             />
           </div>
-
           <div className='col-1-of-3'>
             <Card
               num='2'
@@ -39,6 +37,12 @@ const Hikes = () => {
               price='897'
             />
           </div>
+        </div>
+
+        <div className='u-center-text'>
+          <a href='#' className='btn btn--green'>
+            Discover all tours
+          </a>
         </div>
       </section>
     </Fragment>

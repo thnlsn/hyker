@@ -60,6 +60,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     animation: moveInBottom 1.7s ease-out 0.75s; // name, duration, animation-timing-function, delay
     animation-fill-mode: backwards; // This will automatically apply the values of the 0% keyframe before the animations starts
