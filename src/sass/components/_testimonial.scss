@@ -5,5 +5,24 @@
   background-color: $color-white;
   border-radius: 3px;
   padding: 6rem;
+  padding-left: 9rem;
   font-size: $default-font-size;
+
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: orangered;
+
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+    transform: translate(-3rem, 0);
+  }
+
+  &__text {
+  }
 }

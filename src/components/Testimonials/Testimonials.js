@@ -3,6 +3,9 @@ import '../../css/style.css';
 
 import Testimonial from './Testimonial';
 
+// Images for use in the three image composition
+const p1 = require('../../images/nat-8.jpg');
+
 // Testimonials Section
 const Testimonials = () => {
   return (
@@ -14,7 +17,7 @@ const Testimonials = () => {
 
         {/* Rather than using the row for colums, we're using because it is a nicely centered container */}
         <div className='row'>
-          <Testimonial />
+          <Testimonial image={p1} />
         </div>
       </section>
     </Fragment>

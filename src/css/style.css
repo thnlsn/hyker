@@ -329,7 +329,19 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 3px;
-  padding: 6rem; }
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem; }
+  .testimonial__image {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: orangered;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem, 0); }
 
 .row {
   max-width: 114rem;

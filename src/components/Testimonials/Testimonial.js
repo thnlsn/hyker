@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Testimonial = () => {
+const Testimonial = ({ image }) => {
   return (
     <div className='testimonial'>
-      <figure className='testimonial__image'>Image</figure>
+      <figure className='testimonial__image'>
+        <img src={image} alt='' />
+      </figure>
       <div className='testimonial__text'>
         <h3 className='heading-tertiary u-margin-bottom-small'>
           Spent the best week of my life with my family
