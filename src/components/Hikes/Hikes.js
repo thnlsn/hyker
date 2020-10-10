@@ -3,8 +3,6 @@ import '../../css/style.css';
 
 import Card from './Card/Card';
 
-const details1 = [3, 30, 2, 1, 1];
-
 // Hikes Section
 const Hikes = () => {
   return (

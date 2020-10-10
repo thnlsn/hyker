@@ -6,7 +6,7 @@ const CardBack = ({ num, price }) => {
       <div className='card__cta'>
         <div className='card__price-box'>
           <p className='card__price-only'>Only</p>
-          <p className='card__price-value'>{price}</p>
+          <p className='card__price-value'>${price}</p>
         </div>
         <a href='#' className='btn btn--white'>
           Book now!
