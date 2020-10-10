@@ -39,7 +39,7 @@ const Hikes = () => {
           </div>
         </div>
 
-        <div className='u-center-text'>
+        <div className='u-center-text u-margin-top-xl'>
           <a href='#' className='btn btn--green'>
             Discover all tours
           </a>
