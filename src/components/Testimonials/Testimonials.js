@@ -5,7 +5,7 @@ import '../../css/style.css';
 const Testimonials = () => {
   return (
     <Fragment>
-      <section className='section-stories'>
+      <section className='section-testimonials'>
         <div className='u-center-text u-margin-bottom-large'>
           <h2 className='heading-secondary'>We make people genuinely happy</h2>
         </div>
