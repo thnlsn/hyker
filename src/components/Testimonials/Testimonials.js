@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
-// Stories Section
-const Stories = () => {
+// Testimonials Section
+const Testimonials = () => {
   return (
     <Fragment>
       <section className='section-stories'>
@@ -17,4 +17,4 @@ const Stories = () => {
   );
 };
 
-export default Stories;
+export default Testimonials;
