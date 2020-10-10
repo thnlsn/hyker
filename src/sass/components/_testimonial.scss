@@ -12,14 +12,16 @@
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: orangered;
 
+    // Requires the element to be floated to work: defines an area for which adjacent inline content should wrap around, so we make it equal to the circle
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
 
+    // Creates the circle shape (same as polygon but circle)
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 
+    // The left padding is 9rem as opposed to the 6rem elsewhere to make space and even the distance for the -3rem that the circle takes up
     transform: translate(-3rem, 0);
   }
 
