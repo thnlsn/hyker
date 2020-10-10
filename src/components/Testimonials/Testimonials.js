@@ -7,11 +7,23 @@ import Testimonial from './Testimonial';
 const p1 = require('../../images/nat-8.jpg');
 const p2 = require('../../images/nat-9.jpg');
 
+// Video to be used for the background
+const videoMp4 = require('../../images/video.mp4');
+const videoWebm = require('../../images/video.webm');
+
 // Testimonials Section
 const Testimonials = () => {
   return (
     <Fragment>
       <section className='section-testimonials'>
+        <div className='bg-video'>
+          <video className='bg-video__content' autoPlay muted loop>
+            <source src={videoMp4} type='video/mp4' />
+            <source src={videoWebm} type='video/webm' />
+            Your browser does not support this video!
+          </video>
+        </div>
+
         <div className='u-center-text u-margin-bottom-large'>
           <h2 className='heading-secondary'>We make people genuinely happy</h2>
         </div>
