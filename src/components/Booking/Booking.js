@@ -3,7 +3,15 @@ import '../../css/style.css';
 
 // Booking Section
 const Booking = () => {
-  return <Fragment></Fragment>;
+  return (
+    <Fragment>
+      <section className='section-booking'>
+        <div className='row'>
+          <div className='booking'></div>
+        </div>
+      </section>
+    </Fragment>
+  );
 };
 
 export default Booking;
