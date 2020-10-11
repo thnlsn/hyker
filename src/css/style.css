@@ -377,7 +377,8 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.15; }
+  opacity: 0.15;
+  overflow: hidden; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -449,4 +450,5 @@ body {
   margin-top: -10rem; }
 
 .section-testimonials {
+  padding: 10rem 0;
   position: relative; }

@@ -6,10 +6,11 @@
   width: 100%;
   z-index: -1; // So that it will not overlap the testimonials or button/header
   opacity: 0.15;
+  overflow: hidden;
 
   &__content {
     height: 100%;
     width: 100%;
-    object-fit: cover; // Fill the whole element while retaining aspect ratio
+    object-fit: cover; // Fill the whole element while retaining aspect ratio (this is for HTML elements)
   }
 }
