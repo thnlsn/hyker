@@ -22,8 +22,8 @@ function App() {
         <Hikes />
         <Testimonials />
         <Booking />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
