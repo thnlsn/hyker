@@ -21,7 +21,7 @@
 
     backface-visibility: hidden; // Because we do not want to see the inverse of the frontside when we are looking at the backside
     overflow: hidden; // Set because the image clips out of the div, so we set anything out to be hidden (so the radius is still seen)
-    border-radius: 3px;
+    border-radius: $border-radius-small;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15); // CREATE VARIABLE FOR THESE SHADOWS LATER
 
     &--front {
