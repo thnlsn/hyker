@@ -452,3 +452,13 @@ body {
 .section-testimonials {
   padding: 10rem 0;
   position: relative; }
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.booking {
+  background-image: url(../images/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  height: 50rem; }

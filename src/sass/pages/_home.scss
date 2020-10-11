@@ -1,4 +1,5 @@
-// This class is for the about section but it does in the _home file because it is specific to the home page
+// This scss file is for any styles that are unique to this specific site and not very reusable for the future (not modular components)
+
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
@@ -32,6 +33,7 @@
   }
 }
 
+// This class is for the hikes section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
 .section-hikes {
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
@@ -41,4 +43,20 @@
 .section-testimonials {
   padding: 10rem 0;
   position: relative;
+}
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.booking {
+  background-image: url(../images/nat-10.jpg);
+  background-size: cover; //
+  border-radius: $border-radius-small;
+  height: 50rem;
 }
