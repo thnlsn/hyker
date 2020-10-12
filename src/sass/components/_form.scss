@@ -45,5 +45,6 @@
   // + is the adjacent sibling selector (the adjacent sibling is the one immidiately after (NOT BEFORE))
   &__input:placeholder-shown + &__label {
     opacity: 0;
+    visibility: hidden;
   }
 }
