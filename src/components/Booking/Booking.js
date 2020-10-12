@@ -48,6 +48,9 @@ const Booking = () => {
                       name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
                     />
                     <label htmlFor='small' className='form__radio-label'>
+                      <span className='form__radio-button'>
+                        {/* This is purely for the custom radio button */}
+                      </span>
                       Small group
                     </label>
                   </div>
@@ -59,6 +62,9 @@ const Booking = () => {
                       name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
                     />
                     <label htmlFor='large' className='form__radio-label'>
+                      <span className='form__radio-button'>
+                        {/* This is purely for the custom radio button */}
+                      </span>
                       Large group
                     </label>
                   </div>
