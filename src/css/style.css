@@ -421,6 +421,13 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.form__radio-group {
+  width: 50%;
+  display: inline-block; }
+
+.form__radio-label {
+  font-size: 1.6rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

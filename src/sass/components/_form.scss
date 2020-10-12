@@ -50,4 +50,14 @@
     visibility: hidden;
     transform: translateY(-4rem);
   }
+
+  // RADIO GROUP AND BUTTONS
+  &__radio-group {
+    width: 50%;
+    display: inline-block; // so that they will display side by side with 50& of each side
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+  }
 }
