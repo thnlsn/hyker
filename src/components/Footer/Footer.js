@@ -3,7 +3,11 @@ import '../../css/style.css';
 
 // Footer Section
 const Footer = () => {
-  return <Fragment></Fragment>;
+  return (
+    <Fragment>
+      <footer className='footer'>footer</footer>
+    </Fragment>
+  );
 };
 
 export default Footer;
