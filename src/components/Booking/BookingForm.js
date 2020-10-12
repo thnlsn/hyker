@@ -1,8 +1,8 @@
 import React from 'react';
 
-const BookingForm = ({ heading, radio1, radio2, button }) => {
+const BookingForm = ({ heading, radio1, radio2, button, action }) => {
   return (
-    <form action='#' className='form'>
+    <form action={action} className='form'>
       <div className='u-margin-bottom-medium'>
         <h2 className='heading-secondary'>{heading}</h2>
       </div>
@@ -64,6 +64,7 @@ const BookingForm = ({ heading, radio1, radio2, button }) => {
       </div>
 
       <div className='form__group'>
+        {/* A <button/> element automatically acts as a submit for a form */}
         <button className='btn btn--green'>{button}</button>
       </div>
     </form>

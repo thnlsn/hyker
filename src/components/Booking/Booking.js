@@ -16,6 +16,7 @@ const Booking = () => {
                 radio1='Small group'
                 radio2='Large group'
                 button='Next Step &rarr;'
+                action='#' // For now it is just a blank
               />
             </div>
           </div>
