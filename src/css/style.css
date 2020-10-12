@@ -526,12 +526,13 @@ body {
 
 .section-hikes {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 10rem 0;
   margin-top: -10rem; }
 
 .section-testimonials {
-  padding: 10rem 0;
-  position: relative; }
+  padding: 12rem 0;
+  position: relative;
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%); }
 
 .section-booking {
   padding: 15rem 0;
@@ -541,8 +542,7 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   .booking__form {
     width: 50%;
     height: 100%;
