@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({ heading, radio1, radio2, button }) => {
+const BookingForm = ({ heading, radio1, radio2, button }) => {
   return (
     <form action='#' className='form'>
       <div className='u-margin-bottom-medium'>
@@ -70,4 +70,4 @@ const Form = ({ heading, radio1, radio2, button }) => {
   );
 };
 
-export default Form;
+export default BookingForm;

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
-import Form from './Form';
+import Form from './BookingForm';
 
 // Booking Section
 const Booking = () => {
