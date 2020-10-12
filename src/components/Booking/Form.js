@@ -37,10 +37,10 @@ const Form = ({ heading }) => {
           <input
             type='radio'
             className='form__radio-input'
-            id='small'
-            name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
+            id='option-1'
+            name='booking-form' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
           />
-          <label htmlFor='small' className='form__radio-label'>
+          <label htmlFor='option-1' className='form__radio-label'>
             <span className='form__radio-button'>
               {/* This is purely for the custom radio button */}
             </span>
@@ -51,10 +51,10 @@ const Form = ({ heading }) => {
           <input
             type='radio'
             className='form__radio-input'
-            id='large'
-            name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
+            id='option-2'
+            name='booking-form' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
           />
-          <label htmlFor='large' className='form__radio-label'>
+          <label htmlFor='option-2' className='form__radio-label'>
             <span className='form__radio-button'>
               {/* This is purely for the custom radio button */}
             </span>

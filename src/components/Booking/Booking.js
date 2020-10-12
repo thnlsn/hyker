@@ -11,7 +11,7 @@ const Booking = () => {
         <div className='row'>
           <div className='booking'>
             <div className='booking__form'>
-              <Form heading='Start booking now' />
+              <Form heading='Start booking now' radio1='Small group' radio2='Large group'/>
             </div>
           </div>
         </div>
