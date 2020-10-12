@@ -55,7 +55,6 @@
 }
 
 .booking {
-  padding: 5rem;
   // At 0% it is white, and by 50% it is still white, but at that same exact spot it becomes transparent, and created a line effect similar to clip path polygon
   background-image: linear-gradient(
       105deg,
@@ -70,4 +69,10 @@
 
   // *testing* //
   height: 50rem;
+
+  &__form {
+    width: 50%;
+    height: 100%;
+    padding: 6rem;
+  }
 }
