@@ -18,7 +18,12 @@
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-secondary-dark;
+      border-bottom: 3px solid $color-primary;
+
+      &:invalid {
+        // Only on a focused element, should this apply (and only when it is invalid)
+        border-bottom: 3px solid $color-secondary-dark;
+      }
     }
 
     &::-webkit-input-placeholder {

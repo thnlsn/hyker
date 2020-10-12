@@ -28,7 +28,7 @@ const Booking = () => {
 
                 <div className='form__group'>
                   <input
-                    type='text'
+                    type='email' // This makes it so only an email address will make this input valid (includes an @)
                     className='form__input'
                     placeholder='Email address'
                     id='email'
