@@ -39,7 +39,7 @@ const Booking = () => {
                   </label>
                 </div>
 
-                <div className='form__group'>
+                <div className='form__group u-margin-bottom-medium'>
                   <div className='form__radio-group'>
                     <input
                       type='radio'
@@ -68,10 +68,10 @@ const Booking = () => {
                       Large group
                     </label>
                   </div>
+                </div>
 
-                  <div className='form__group'>
-                    <button className='btn btn--green'>Next Step &rarr;</button>{' '}
-                  </div>
+                <div className='form__group'>
+                  <button className='btn btn--green'>Next Step &rarr;</button>
                 </div>
               </form>
             </div>
