@@ -38,6 +38,29 @@ const Booking = () => {
                     Email address
                   </label>
                 </div>
+
+                <div className='form__group'>
+                  <div className='form__radio-group'>
+                    <input
+                      type='radio'
+                      className='form__radio-input'
+                      id='small'
+                    />
+                    <label htmlFor='small' className='form__radio-label'>
+                      Small group
+                    </label>
+                  </div>
+                  <div className='form__radio-group'>
+                    <input
+                      type='radio'
+                      className='form__radio-input'
+                      id='large'
+                    />
+                    <label htmlFor='large' className='form__radio-label'>
+                      Large group
+                    </label>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
