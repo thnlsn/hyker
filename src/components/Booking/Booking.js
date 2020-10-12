@@ -45,6 +45,7 @@ const Booking = () => {
                       type='radio'
                       className='form__radio-input'
                       id='small'
+                      name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
                     />
                     <label htmlFor='small' className='form__radio-label'>
                       Small group
@@ -55,6 +56,7 @@ const Booking = () => {
                       type='radio'
                       className='form__radio-input'
                       id='large'
+                      name='size' // name is what links 2 radio buttons together as a group (so only 1 can be selected)
                     />
                     <label htmlFor='large' className='form__radio-label'>
                       Large group
