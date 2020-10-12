@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({ heading }) => {
+const Form = ({ heading, radio1, radio2, button }) => {
   return (
     <form action='#' className='form'>
       <div className='u-margin-bottom-medium'>
@@ -27,7 +27,7 @@ const Form = ({ heading }) => {
           id='email'
           required
         />
-        <label htmlFor='name' className='form__label'>
+        <label htmlFor='email' className='form__label'>
           Email address
         </label>
       </div>
@@ -44,7 +44,7 @@ const Form = ({ heading }) => {
             <span className='form__radio-button'>
               {/* This is purely for the custom radio button */}
             </span>
-            Small group
+            {radio1}
           </label>
         </div>
         <div className='form__radio-group'>
@@ -58,13 +58,13 @@ const Form = ({ heading }) => {
             <span className='form__radio-button'>
               {/* This is purely for the custom radio button */}
             </span>
-            Large group
+            {radio2}
           </label>
         </div>
       </div>
 
       <div className='form__group'>
-        <button className='btn btn--green'>Next Step &rarr;</button>
+        <button className='btn btn--green'>{button}</button>
       </div>
     </form>
   );
