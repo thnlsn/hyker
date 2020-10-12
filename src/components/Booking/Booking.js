@@ -68,6 +68,10 @@ const Booking = () => {
                       Large group
                     </label>
                   </div>
+
+                  <div className='form__group'>
+                    <button className='btn btn--green'>Next Step &rarr;</button>{' '}
+                  </div>
                 </div>
               </form>
             </div>

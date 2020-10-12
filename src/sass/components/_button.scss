@@ -1,6 +1,7 @@
 // This file is a partial (it was named leading with a _) which tells Sass that this should not be generated into a CSS file, and instead included in one by importing
 
 .btn {
+  &, // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
   // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
   &:link,
   &:visited {
@@ -13,6 +14,10 @@
     transition: all 0.2s; // all refers to ALL states (hover, active, etc.) and if they change position, they will simply transition to it in 0.2 seconds
     position: relative; // This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set)
     font-size: $default-font-size;
+
+    // This is code for making this class usable on <button/> (for use in forms) elements which come with some unwanted side effects
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -28,11 +33,15 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translateY(
       -1px
     ); // Clicking (active) will seem to make it go down, but in reality its going up, just based on the parent. Since hover makes it go 3px and clicking only goes 1px, it goes from 3px to 1px when clicked.
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+    // This is for <button/> elements, as they come with a blue outline on focus
+    outline: none;
   }
 
   // ::active is a pseudo-element, it is not in the html markup, but it does exist on the page
