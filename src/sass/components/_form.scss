@@ -86,14 +86,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: $color-primary;
+      background-color: $color-primary-light;
       opacity: 0; // This is for initial state (since it will be unselected)
 
-      transition: all 0.2s;
+      transition: all 0.4s; // For the changing of invisible to checked on the custom radio buttons
     }
   }
 
+  // Select the radio input element (the original blue button) + select it's direct sibling + select it's child + select it's after pseudo-element
   &__radio-input:checked + &__radio-label &__radio-button::after {
-    opacity: 1; //
+    opacity: 1; // This and the following are the state changes for the radio buttons
+    background-color: $color-primary;
   }
 }
