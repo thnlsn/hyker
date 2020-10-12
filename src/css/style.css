@@ -425,6 +425,9 @@ body {
   width: 50%;
   display: inline-block; }
 
+.form__radio-input {
+  visibility: hidden; }
+
 .form__radio-label {
   font-size: 1.6rem;
   cursor: pointer;

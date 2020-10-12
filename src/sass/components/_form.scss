@@ -57,6 +57,10 @@
     display: inline-block; // so that they will display side by side with 50& of each side
   }
 
+  &__radio-input {
+    visibility: hidden;
+  }
+
   &__radio-label {
     font-size: $default-font-size;
     cursor: pointer;
