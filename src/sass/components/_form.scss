@@ -26,12 +26,24 @@
       }
     }
 
+    &::placeholder,
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
   }
 
   &__label {
-    color: orangered;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+
+    transition: all 0.4s;
+  }
+
+  // + is the adjacent sibling selector (the adjacent sibling is the one immidiately after (NOT BEFORE))
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
   }
 }
