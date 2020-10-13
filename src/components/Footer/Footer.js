@@ -35,11 +35,10 @@ const Footer = () => {
           </div>
           <div className='col-1-of-2'>
             <p className='footer__copyright'>
-              Built by{' '}
+              Built by
               <a href='#' className='footer__link'>
-                {' '}
                 Thomas Nelson
-              </a>{' '}
+              </a>
               as practice learning CSS and Sass.
             </p>
             Copyright &copy; by Jonas Schmedtmann
