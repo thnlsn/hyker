@@ -1,4 +1,4 @@
-/* Style imports */
+/* Style imports (Every partial imported into here will be available app-wide) */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -546,6 +546,27 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+
+.navigation__checkbox {
+  background-color: orangered; }
+
+.navigation__button {
+  background-color: orangered; }
+
+.navigation__background {
+  background-color: orangered; }
+
+.navigation__nav {
+  background-color: orangered; }
+
+.navigation__list {
+  background-color: orangered; }
+
+.navigation__item {
+  background-color: orangered; }
+
+.navigation__link {
+  background-color: orangered; }
 
 .section-about {
   background-color: #f7f7f7;

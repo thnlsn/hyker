@@ -1,3 +1,24 @@
 .navigation {
-  background-color: orangered;
+  &__checkbox {
+    background-color: orangered;
+  }
+  &__button {
+    background-color: orangered;
+  }
+  &__background {
+    background-color: orangered;
+  }
+
+  &__nav {
+    background-color: orangered;
+  }
+  &__list {
+    background-color: orangered;
+  }
+  &__item {
+    background-color: orangered;
+  }
+  &__link {
+    background-color: orangered;
+  }
 }
