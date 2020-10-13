@@ -521,7 +521,8 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    background-color: orangered; }
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
   .footer__list {
     list-style: none; }
   .footer__item {

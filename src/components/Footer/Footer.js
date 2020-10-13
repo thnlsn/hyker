@@ -13,33 +13,35 @@ const Footer = () => {
         </div>
         <div className='row'>
           <div className='col-1-of-2'>
-            <ul className='footer__list'>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Company
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Contact us
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Careers
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Privacy
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Terms
-                </a>
-              </li>
-            </ul>
+            <div className='footer__navigation'>
+              <ul className='footer__list'>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Company
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Contact us
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Careers
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Privacy
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Terms
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className='col-1-of-2'>
             <p className='footer__copyright'>
