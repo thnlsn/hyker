@@ -9,7 +9,7 @@ const Footer = () => {
     <Fragment>
       <footer className='footer'>
         <div className='footer__logo-box'>
-          <img src={logo} alt='Full Logo' />
+          <img src={logo} alt='Full Logo' className='footer__logo' />
         </div>
         <div className='row'>
           <div className='col-1-of-2'>
@@ -18,15 +18,23 @@ const Footer = () => {
                 <a href='#' className='footer__link'>
                   Company
                 </a>
+              </li>
+              <li className='footer__item'>
                 <a href='#' className='footer__link'>
                   Contact us
                 </a>
+              </li>
+              <li className='footer__item'>
                 <a href='#' className='footer__link'>
                   Careers
                 </a>
+              </li>
+              <li className='footer__item'>
                 <a href='#' className='footer__link'>
                   Privacy
                 </a>
+              </li>
+              <li className='footer__item'>
                 <a href='#' className='footer__link'>
                   Terms
                 </a>
