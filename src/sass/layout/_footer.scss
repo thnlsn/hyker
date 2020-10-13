@@ -3,6 +3,11 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  &__logo-box {
+    text-align: center; // The <img/> is an inline element so it will behave like text and center
+    margin-bottom: 8rem;
+  }
+
   &__logo {
     width: 15rem;
     height: auto;

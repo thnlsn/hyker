@@ -514,6 +514,9 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
   .footer__logo {
     width: 15rem;
     height: auto; }
