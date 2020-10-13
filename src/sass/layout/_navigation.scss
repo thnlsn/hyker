@@ -2,11 +2,31 @@
   &__checkbox {
     background-color: orangered;
   }
+
   &__button {
-    background-color: orangered;
+    background-color: $color-white;
+    height: 7rem; // 1 rem larger than the size of the __background, because we want that to be hidden under the button and only expand when clicked
+    width: 7rem; // 1 rem larger than the size of the __background, because we want that to be hidden under the button and only expand when clicked
+    position: fixed;
+    top: 6rem; // Less far from the edges than the background because it is a rem larger
+    right: 6rem; // Less far from the edges than the background because it is a rem larger
+    border-radius: 50%; // Circle shape
   }
+
   &__background {
-    background-color: orangered;
+    height: 6rem; // Same height/width because circle
+    width: 6rem; // Same height/width because circle
+    border-radius: 50%; // Circle shape
+    position: fixed; // Similar to absolute but it stays on the screen in the same spot no matter where you scroll
+    top: 6.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+    right: 6.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+    background-image: radial-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: 100;
+
+    transition: all 1s;
   }
 
   &__nav {
@@ -20,5 +40,9 @@
   }
   &__link {
     background-color: orangered;
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(40);
   }
 }

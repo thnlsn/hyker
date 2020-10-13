@@ -551,10 +551,24 @@ body {
   background-color: orangered; }
 
 .navigation__button {
-  background-color: orangered; }
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%; }
 
 .navigation__background {
-  background-color: orangered; }
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 100;
+  transition: all 1s; }
 
 .navigation__nav {
   background-color: orangered; }
@@ -567,6 +581,9 @@ body {
 
 .navigation__link {
   background-color: orangered; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(40); }
 
 .section-about {
   background-color: #f7f7f7;
