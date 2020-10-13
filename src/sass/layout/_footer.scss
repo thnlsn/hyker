@@ -12,4 +12,40 @@
     width: 15rem;
     height: auto;
   }
+
+  &__navigation {
+    background-color: orangered;
+  }
+
+  &__list {
+    list-style: none; // Remove the bullet points
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      background-color: $color-grey-dark-3; // So it does not appear transparent over other text
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+
+      transition: all 0.2s; // For the rotate and scale effect on hover/active
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.2);
+    }
+  }
 }
