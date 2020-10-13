@@ -50,8 +50,8 @@ const Footer = () => {
                 Thomas Nelson
               </a>{' '}
               as practice learning CSS and Sass.
+              <p> Copyright &copy; by Jonas Schmedtmann</p>
             </p>
-            Copyright &copy; by Jonas Schmedtmann
           </div>
         </div>
       </footer>

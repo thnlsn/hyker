@@ -16,6 +16,7 @@
   &__navigation {
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
+    display: inline-block; // This was originally a block element, so the border occupied 100% of the width, but as an inline-block it only occupies what it needs
   }
 
   &__list {
@@ -48,5 +49,12 @@
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(5deg) scale(1.2);
     }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
   }
 }
