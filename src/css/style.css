@@ -548,7 +548,7 @@ body {
     float: right; }
 
 .navigation__checkbox {
-  background-color: orangered; }
+  display: none; }
 
 .navigation__button {
   background-color: #fff;
@@ -557,7 +557,8 @@ body {
   position: fixed;
   top: 6rem;
   right: 6rem;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 200; }
 
 .navigation__background {
   height: 6rem;
@@ -566,7 +567,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485);
+  background-image: radial-gradient(#7ed56f, #28b485, transparent);
   z-index: 100;
   transition: all 1s; }
 
@@ -583,7 +584,7 @@ body {
   background-color: orangered; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(40); }
+  transform: scale(60); }
 
 .section-about {
   background-color: #f7f7f7;

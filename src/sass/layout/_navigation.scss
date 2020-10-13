@@ -1,6 +1,6 @@
 .navigation {
   &__checkbox {
-    background-color: orangered;
+    display: none;
   }
 
   &__button {
@@ -11,6 +11,7 @@
     top: 6rem; // Less far from the edges than the background because it is a rem larger
     right: 6rem; // Less far from the edges than the background because it is a rem larger
     border-radius: 50%; // Circle shape
+    z-index: 200;
   }
 
   &__background {
@@ -22,7 +23,8 @@
     right: 6.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
     background-image: radial-gradient(
       $color-primary-light,
-      $color-primary-dark
+      $color-primary-dark,
+      transparent
     );
     z-index: 100;
 
@@ -43,6 +45,6 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(40);
+    transform: scale(60);
   }
 }
