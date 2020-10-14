@@ -11,6 +11,7 @@ import Hikes from './components/Hikes/Hikes';
 import Testimonials from './components/Testimonials/Testimonials';
 import Booking from './components/Booking/Booking';
 import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Booking />
       </main>
       <Footer />
+      <Modal />
     </div>
   );
 }
