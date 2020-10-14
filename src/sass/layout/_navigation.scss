@@ -14,7 +14,8 @@
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
 
-    text-align: center;
+    text-align: center; // The burger icons are spans, which are inline so this works to center
+    cursor: pointer;
   }
 
   &__background {
@@ -115,6 +116,7 @@
   // MENU BUTTON ICON
   &__icon {
     position: relative;
+    margin-top: 3.4rem;
 
     // Targetting the span, as well as it's before and after pseudo-elements
     &,
@@ -124,6 +126,7 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block; // So these width/height changes can effect this
+      transition: all 0.2s;
     }
 
     &::before,
@@ -134,11 +137,36 @@
     }
 
     &::before {
-      top: -1rem;
+      top: -0.8rem;
     }
 
     &::after {
-      top: 1rem;
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon:after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked ~ &__button &__icon {
+    width: 0;
+    &:before {
+      opacity: 1;
+      top: 0;
+      left: 50%;
+      transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    &:after {
+      opacity: 1;
+      top: 0;
+      left: 50%;
+      transform: rotate(-45deg) translate(-50%, -50%);
     }
   }
 }
