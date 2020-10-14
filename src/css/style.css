@@ -558,7 +558,7 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 200; }
+  z-index: 300; }
 
 .navigation__background {
   height: 6rem;
@@ -572,16 +572,21 @@ body {
   transition: all 1s; }
 
 .navigation__nav {
-  background-color: orangered; }
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200; }
 
 .navigation__list {
-  background-color: orangered; }
+  background-color: transparent; }
 
 .navigation__item {
-  background-color: orangered; }
+  background-color: transparent; }
 
 .navigation__link {
-  background-color: orangered; }
+  background-color: transparent; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(60); }
