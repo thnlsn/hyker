@@ -13,6 +13,8 @@
     border-radius: 50%; // Circle shape
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+
+    text-align: center;
   }
 
   &__background {
@@ -24,8 +26,7 @@
     right: 6.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
     background-image: radial-gradient(
       $color-primary-light,
-      $color-primary-dark,
-      transparent
+      $color-primary-dark
     );
     z-index: 100;
 
@@ -107,7 +108,37 @@
     opacity: 1;
     transform: translateX(
       0
-    ); // It was -100vw by default, so we set it back to normal
+    ); // It was translated -100vw by default, so we set it back to normal
     /*     width: 100%; */
+  }
+
+  // MENU BUTTON ICON
+  &__icon {
+    position: relative;
+
+    // Targetting the span, as well as it's before and after pseudo-elements
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+      display: inline-block; // So these width/height changes can effect this
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
   }
 }
