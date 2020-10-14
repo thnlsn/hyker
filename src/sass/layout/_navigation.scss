@@ -40,11 +40,17 @@
     left: 0;
     z-index: 200;
 
-    opacity: 0; // This is so that the menu is not visible by default, but only when we press the menu button
-    width: 0; // The reason we hide it with width rather than just opacity is because the buttons would still be interactable
+    width: 100%;
 
-    transition: all 1s; // For the showing of the menu when the button is clicked
+    opacity: 0; // This is so that the menu is not visible by default, but only when we press the menu button
+    /*     width: 0; // The reason we hide it with width rather than just opacity is because the buttons would still be interactable */
+    transform: translateX(
+      -100vw
+    ); // This avoids the issue of setting width to 0 as a way of hiding in that you wont see the list squished for a split second as it closes
+
+    transition: all 0.8s cubic-bezier(0.79, -0.35, 0.16, 1.36); // For the showing of the menu when the button is clicked
   }
+
   &__list {
     @include absolute-center;
     list-style: none;
@@ -99,6 +105,9 @@
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 100%;
+    transform: translateX(
+      0
+    ); // It was -100vw by default, so we set it back to normal
+    /*     width: 100%; */
   }
 }

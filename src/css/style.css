@@ -579,9 +579,11 @@ body {
   top: 0;
   left: 0;
   z-index: 200;
+  width: 100%;
   opacity: 0;
-  width: 0;
-  transition: all 1s; }
+  /*     width: 0; // The reason we hide it with width rather than just opacity is because the buttons would still be interactable */
+  transform: translateX(-100vw);
+  transition: all 0.8s cubic-bezier(0.79, -0.35, 0.16, 1.36); }
 
 .navigation__list {
   position: absolute;
@@ -620,7 +622,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  transform: translateX(0);
+  /*     width: 100%; */ }
 
 .section-about {
   background-color: #f7f7f7;
