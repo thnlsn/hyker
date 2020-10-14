@@ -41,7 +41,10 @@
     z-index: 200;
   }
   &__list {
-    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &__item {
     background-color: transparent;

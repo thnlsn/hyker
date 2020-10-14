@@ -580,7 +580,10 @@ body {
   z-index: 200; }
 
 .navigation__list {
-  background-color: transparent; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .navigation__item {
   background-color: transparent; }
