@@ -70,6 +70,7 @@
       background-size: 200;
     }
   }
+
   &__link {
     &:link,
     &:visited {
@@ -102,7 +103,7 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(100);
+    transform: scale(70);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -126,7 +127,7 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block; // So these width/height changes can effect this
-      transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      transition: all 0.4s;
     }
 
     &::before,
@@ -137,15 +138,21 @@
     }
 
     &::before {
-      top: -0.8rem;
+      top: -0.9rem;
     }
 
     &::after {
-      top: 0.8rem;
+      top: 0.9rem;
     }
   }
 
   &__button:hover &__icon {
+    &,
+    &::before,
+    &::after {
+      transform: scale(1.03);
+    }
+
     &::before {
       top: -1rem;
     }
@@ -158,6 +165,7 @@
   // For the rotation effect of the burger menu (+ is usable because it is a direct sibling)
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
+
     &::before,
     &::after {
       top: 0; // Both their top values were place slightly above and below the original span, so for it to be centered they have to be at the exact same location again

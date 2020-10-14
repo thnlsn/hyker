@@ -1,5 +1,10 @@
 // This scss file is for any styles that are unique to this specific site and not very reusable for the future (not modular components)
 
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
