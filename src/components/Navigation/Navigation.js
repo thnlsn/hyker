@@ -10,7 +10,7 @@ const Navigation = () => {
       />
 
       <label htmlFor='navigation-toggle' className='navigation__button'>
-        <span className='navigation__icon'>&nbsp;</span>
+        <span className='navigation__icon unselectable'>&nbsp;</span>
       </label>
 
       <div className='navigation__background'>&nbsp;</div>

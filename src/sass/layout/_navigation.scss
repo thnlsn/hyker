@@ -126,7 +126,7 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block; // So these width/height changes can effect this
-      transition: all 0.2s;
+      transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
 
     &::before,

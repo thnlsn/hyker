@@ -115,6 +115,20 @@ body {
 .u-margin-top-xl {
   margin-top: 10rem !important; }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */ }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -635,7 +649,7 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block;
-    transition: all 0.2s; }
+    transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
