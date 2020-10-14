@@ -29,7 +29,7 @@
     );
     z-index: 100;
 
-    transition: all 1s;
+    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); // For the scaling up of the radial background
   }
 
   &__nav {
@@ -42,12 +42,17 @@
 
     opacity: 0; // This is so that the menu is not visible by default, but only when we press the menu button
     width: 0; // The reason we hide it with width rather than just opacity is because the buttons would still be interactable
+
+    transition: all 1s; // For the showing of the menu when the button is clicked
   }
   &__list {
     @include absolute-center;
     list-style: none;
     text-align: center;
+
+    width: 100%;
   }
+
   &__item {
     margin: 1rem;
 
@@ -90,5 +95,10 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(100);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
   }
 }

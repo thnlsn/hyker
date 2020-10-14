@@ -571,7 +571,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485, transparent);
   z-index: 100;
-  transition: all 1s; }
+  transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
 
 .navigation__nav {
   height: 100vh;
@@ -580,7 +580,8 @@ body {
   left: 0;
   z-index: 200;
   opacity: 0;
-  width: 0; }
+  width: 0;
+  transition: all 1s; }
 
 .navigation__list {
   position: absolute;
@@ -588,7 +589,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .navigation__item {
   margin: 1rem;
@@ -615,6 +617,10 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(100); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
 
 .section-about {
   background-color: #f7f7f7;
