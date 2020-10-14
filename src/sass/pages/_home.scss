@@ -1,8 +1,8 @@
 // This scss file is for any styles that are unique to this specific site and not very reusable for the future (not modular components)
 
 ::selection {
-  background-color: #55c57a;
-  color: #fff;
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 .section-about {
