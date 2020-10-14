@@ -131,7 +131,7 @@
 
     &::before,
     &::after {
-      content: '';
+      content: ''; // Neccesary for pseudo-elements to appear visually
       position: absolute;
       left: 0;
     }
@@ -145,28 +145,30 @@
     }
   }
 
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
-
-  &__button:hover &__icon:after {
-    top: 1rem;
-  }
-
-  &__checkbox:checked ~ &__button &__icon {
-    width: 0;
-    &:before {
-      opacity: 1;
-      top: 0;
-      left: 50%;
-      transform: rotate(45deg) translate(-50%, -50%);
+  &__button:hover &__icon {
+    &::before {
+      top: -1rem;
     }
 
-    &:after {
-      opacity: 1;
-      top: 0;
-      left: 50%;
-      transform: rotate(-45deg) translate(-50%, -50%);
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  // For the rotation effect of the burger menu (+ is usable because it is a direct sibling)
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+    &::before,
+    &::after {
+      top: 0; // Both their top values were place slightly above and below the original span, so for it to be centered they have to be at the exact same location again
+    }
+
+    &::before {
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      transform: rotate(-135deg);
     }
   }
 }

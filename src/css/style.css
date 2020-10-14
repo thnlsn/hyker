@@ -648,21 +648,17 @@ body {
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
 
-.navigation__button:hover .navigation__icon:after {
+.navigation__button:hover .navigation__icon::after {
   top: 1rem; }
 
-.navigation__checkbox:checked ~ .navigation__button .navigation__icon {
-  width: 0; }
-  .navigation__checkbox:checked ~ .navigation__button .navigation__icon:before {
-    opacity: 1;
-    top: 0;
-    left: 50%;
-    transform: rotate(45deg) translate(-50%, -50%); }
-  .navigation__checkbox:checked ~ .navigation__button .navigation__icon:after {
-    opacity: 1;
-    top: 0;
-    left: 50%;
-    transform: rotate(-45deg) translate(-50%, -50%); }
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before, .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    transform: rotate(-135deg); }
 
 .section-about {
   background-color: #f7f7f7;
