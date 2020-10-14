@@ -72,14 +72,14 @@
         $color-white 50%
       );
 
-      background-size: 240%;
+      background-size: 240%; // #### 220%
 
       transition: all 0.4s;
     }
 
     &:hover,
     &:active {
-      background-position: 100%;
+      background-position: 100%; // This is shifting the white background back to its original position (since its initial state is )
       color: $color-primary;
       transform: translateX(1rem);
     }
