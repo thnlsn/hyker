@@ -31,11 +31,11 @@
 
   &__text-box {
     position: absolute;
-    top: 40%; // The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off cente
-    left: 50%; // The left side of the box will be 50% away from the left side of the parent (.element)
-    transform: translate(
-      -50%,
-      -50%
+    // The top side of the box will be 40% away from the top side of the parent (.element) 40 not 50 because the wedge on the bottom makes it look off center
+    // The left side of the box will be 50% away from the left side of the parent (.element)
+    @include absolute-center(
+      40%,
+      50%
     ); // The box will be shifted half it's width to the left and up, to allow for true centering
     text-align: center; // This centers the text AND the button! This is because the button (btn-white) is inline-block, so it acts like text (inline)
   }

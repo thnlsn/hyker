@@ -86,10 +86,8 @@
       width: 1.3rem;
       border-radius: 50%;
 
-      position: absolute; // This will be in relation to the last absolute position because it works the same as relative // XCZ
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      @include absolute-center; // This will be in relation to the last absolute position because it works the same as relative // XCZ
+
       background-color: $color-primary-light;
       opacity: 0; // This is for initial state (since it will be unselected)
 
