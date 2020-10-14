@@ -577,14 +577,15 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 200; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  list-style: none; }
 
 .navigation__item {
   background-color: transparent; }
@@ -593,7 +594,7 @@ body {
   background-color: transparent; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(60); }
+  transform: scale(100); }
 
 .section-about {
   background-color: #f7f7f7;

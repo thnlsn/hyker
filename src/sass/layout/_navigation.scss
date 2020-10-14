@@ -37,11 +37,12 @@
     width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 200;
   }
   &__list {
     @include absolute-center;
+    list-style: none;
   }
   &__item {
     background-color: transparent;
@@ -51,6 +52,6 @@
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(60);
+    transform: scale(100);
   }
 }
