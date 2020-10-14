@@ -12,6 +12,7 @@
     right: 6rem; // Less far from the edges than the background because it is a rem larger
     border-radius: 50%; // Circle shape
     z-index: 300;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
   }
 
   &__background {
@@ -34,11 +35,13 @@
   &__nav {
     // Giant container spanning the entire viewport
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 200;
+
+    opacity: 0; // This is so that the menu is not visible by default, but only when we press the menu button
+    width: 0; // The reason we hide it with width rather than just opacity is because the buttons would still be interactable
   }
   &__list {
     @include absolute-center;
