@@ -13,7 +13,7 @@ const Navigation = () => {
         <span className='navigation__icon unselectable'>&nbsp;</span>
       </label>
 
-      <div className='navigation__background'>&nbsp;</div>
+      <div className='navigation__background unselectable'>&nbsp;</div>
 
       <nav className='navigation__nav'>
         <ul className='navigation__list'>
