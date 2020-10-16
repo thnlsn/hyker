@@ -13,18 +13,26 @@
     @include absolute-center;
 
     width: 75%;
-    height: 75%; // Testing
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: $border-radius-small;
+
+    display: table;
+    overflow: hidden;
   }
 
   &__left {
     width: 33.333333%;
+    // float: left;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   &__right {
     width: 66.666666%;
+    //float: left;
+    display: table-cell;
+    vertical-align: middle;
   }
 
   &__img {

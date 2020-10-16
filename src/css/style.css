@@ -492,14 +492,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    height: 75%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px; }
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
   .modal__left {
-    width: 33.333333%; }
+    width: 33.333333%;
+    display: table-cell;
+    vertical-align: middle; }
   .modal__right {
-    width: 66.666666%; }
+    width: 66.666666%;
+    display: table-cell;
+    vertical-align: middle; }
   .modal__img {
     display: block;
     width: 100%; }
