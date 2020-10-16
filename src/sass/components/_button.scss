@@ -94,7 +94,7 @@
     // Very small units like the following two do not have to be rem because we don't want things like this to change when the base font size changes
     border-bottom: 1px solid $color-primary;
     border-radius: 5px; // A#####
-    padding: 3px 5px; // C#####
+    padding: 3px 10px; // C#####
     transition: all 0.2s;
   }
 

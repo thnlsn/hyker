@@ -188,7 +188,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   border-radius: 5px;
-  padding: 3px 5px;
+  padding: 3px 10px;
   transition: all 0.2s; }
 
 .btn-text:hover {
