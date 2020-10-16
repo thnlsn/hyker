@@ -9,37 +9,10 @@
 
   z-index: 400;
 
-  opacity: 0; // Testing
-  visibility: hidden; // Testing
+  opacity: 0; // Initial state
+  visibility: hidden; // Initial state
 
   transition: all 0.3s; // For the showing and hiding of the modal
-
-  // Buttons with href "#modal" will target this pseudo-class (they are targets, this is the anchor (this whole element))
-  // :target specifically selects the element with the ID that matches the current URL fragment, which is where a buttons href would go
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &__close {
-    &:link,
-    &:visited {
-      color: $color-grey-dark-1;
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      line-height: 1; // We have to set line height because the X is an HTML code and counts as text, so it is not quite placed where we want because the line height is making it taller than it looks
-
-      transition: all 0.2s; // For the color change on hover of the X button
-    }
-
-    &:hover {
-      color: $color-secondary-dark;
-    }
-  }
 
   &__content {
     @include absolute-center;
@@ -51,6 +24,11 @@
 
     display: table;
     overflow: hidden;
+
+    opacity: 0; // Initial state
+    transform: translate(-50%, -50%) scale(0.25); // Initial state (We have to repeat the centering from the mixin because you cannot have 2 different transform declarations, or else the last one takes precedence, which in this case would mess it up unless we repeated the centering)
+
+    transition: all 0.4s 0.2s; // .2s is a delay for the popup, so the dark background happens first and when it almost finishes we popup the modal
   }
 
   &__left {
@@ -85,5 +63,39 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; // In order to actually show hyphens, you must edit the document language in the html to a real language
+  }
+
+  // Open states
+
+  // Buttons with href "#modal" will target this pseudo-class (they are targets, this is the anchor (this whole element))
+  // :target specifically selects the element with the ID that matches the current URL fragment, which is where a buttons href would go
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    opacity: 1; // Initial state
+    transform: translate(-50%, -50%) scale(1); // Initial state (We have to repeat the centering from the mixin because you cannot have 2 different transform declarations, or else the last one takes precedence, which in this case would mess it up unless we repeated the centering)
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark-1;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1; // We have to set line height because the X is an HTML code and counts as text, so it is not quite placed where we want because the line height is making it taller than it looks
+
+      transition: all 0.2s; // For the color change on hover of the X button
+    }
+
+    &:hover {
+      color: $color-secondary-dark;
+    }
   }
 }
