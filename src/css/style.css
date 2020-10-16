@@ -496,6 +496,9 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px; }
+  .modal__img {
+    display: block;
+    width: 100%; }
 
 .row {
   max-width: 114rem;
