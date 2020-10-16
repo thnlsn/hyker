@@ -509,8 +509,9 @@ body {
   .modal__img {
     display: block;
     width: 100%; }
-  .modal__ {
-    background-color: transparent; }
+  .modal__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem; }
 
 .row {
   max-width: 114rem;
