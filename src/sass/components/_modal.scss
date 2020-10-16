@@ -9,6 +9,9 @@
 
   z-index: 400;
 
+  opacity: 0; // Testing
+  visibility: hidden; // Testing
+
   &__content {
     @include absolute-center;
 

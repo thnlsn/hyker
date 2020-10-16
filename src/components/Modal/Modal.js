@@ -5,7 +5,7 @@ const tourPhoto2 = require('../../images/nat-9.jpg');
 
 const Modal = () => {
   return (
-    <div className='modal'>
+    <div className='modal' id='modal'>
       <div className='modal__content'>
         <div className='modal__left'>
           <img src={tourPhoto1} alt='Tour photo' className='modal__img' />

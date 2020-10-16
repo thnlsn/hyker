@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardBack = ({ num, price }) => {
+const CardBack = ({ num, price, href }) => {
   return (
     <div className={`card__side card__side--back card__side--back-${num}`}>
       <div className='card__cta'>
@@ -8,7 +8,7 @@ const CardBack = ({ num, price }) => {
           <p className='card__price-only'>Only</p>
           <p className='card__price-value'>${price}</p>
         </div>
-        <a href='#' className='btn btn--white'>
+        <a href={href} className='btn btn--white'>
           Book now!
         </a>
       </div>

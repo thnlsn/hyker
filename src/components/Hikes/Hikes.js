@@ -15,6 +15,7 @@ const Hikes = () => {
         <div className='row'>
           <div className='col-1-of-3'>
             <Card
+              href='#modal'
               num='1'
               heading='The Ocean Explorer'
               details={[3, 30, 2, 'cozy hotels', 'easy']}
@@ -23,6 +24,7 @@ const Hikes = () => {
           </div>
           <div className='col-1-of-3'>
             <Card
+              href='#modal'
               num='2'
               heading='The Forest Adventurer'
               details={[7, 40, 6, 'provided tents', 'medium']}
@@ -31,6 +33,7 @@ const Hikes = () => {
           </div>
           <div className='col-1-of-3'>
             <Card
+              href='#modal'
               num='3'
               heading='The Tundra Traveller'
               details={[5, 15, 3, 'provided tents', 'hard']}
