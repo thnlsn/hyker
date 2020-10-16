@@ -510,8 +510,7 @@ body {
     display: block;
     width: 100%; }
   .modal__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem; }
+    font-size: 1.4rem; }
 
 .row {
   max-width: 114rem;

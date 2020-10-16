@@ -12,11 +12,13 @@ const Modal = () => {
           <img src={tourPhoto2} alt='Tour photo' className='modal__img' />
         </div>
         <div className='modal__right'>
-          <h2 className='heading-secondary'>Start booking now</h2>
-          <h3 className='heading-tertiary'>
+          <h2 className='heading-secondary u-margin-bottom-small'>
+            Start booking now
+          </h2>
+          <h3 className='heading-tertiary u-margin-bottom-small'>
             Important &ndash; Please read carefully before booking
           </h3>
-          <p className='modal__text'>
+          <p className='modal__text u-margin-bottom-medium'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
             bibendum enim facilisis gravida neque convallis a cras. Odio ut sem
