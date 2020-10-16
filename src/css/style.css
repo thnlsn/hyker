@@ -488,6 +488,9 @@ body {
   z-index: 400;
   opacity: 0;
   visibility: hidden; }
+  .modal:target {
+    opacity: 1;
+    visibility: visible; }
   .modal__content {
     position: absolute;
     top: 50%;

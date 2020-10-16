@@ -12,6 +12,12 @@
   opacity: 0; // Testing
   visibility: hidden; // Testing
 
+  // Buttons with href "#modal" will target this pseudo-element (they are targets, this is the anchor (this whole element))
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__content {
     @include absolute-center;
 
