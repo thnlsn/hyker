@@ -487,7 +487,8 @@ body {
   left: 0;
   z-index: 400;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all 0.3s; }
   .modal:target {
     opacity: 1;
     visibility: visible; }
@@ -498,7 +499,11 @@ body {
     right: 2.5rem;
     font-size: 3rem;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 1;
+    transition: all 0.2s; }
+  .modal__close:hover {
+    color: #ff7730; }
   .modal__content {
     position: absolute;
     top: 50%;

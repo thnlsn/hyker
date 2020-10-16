@@ -26,13 +26,9 @@ const Modal = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet
             bibendum enim facilisis gravida neque convallis a cras. Odio ut sem
             nulla pharetra diam. Tincidunt dui ut ornare lectus sit. Posuere
-            urna nec tincidunt praesent semper feugiat nibh sed. Molestie ac
-            feugiat sed lectus. Lectus mauris ultrices eros in. Suspendisse
-            faucibus interdum posuere lorem ipsum dolor sit. Semper risus in
-            hendrerit gravida rutrum. Vel eros donec ac odio tempor. In metus
-            vulputate eu scelerisque felis imperdiet proin fermentum. Tellus
-            integer feugiat scelerisque varius morbi enim. Maecenas sed enim ut
-            sem viverra aliquet. Venenatis cras sed felis eget velit aliquet
+            urna nec tincidunt praesent semper feugiat nibh sed. Tellus integer
+            feugiat scelerisque varius morbi enim. Maecenas sed enim ut sem
+            viverra aliquet. Venenatis cras sed felis eget velit aliquet
             sagittis id consectetur. Eget nunc scelerisque viverra mauris in
             aliquam sem fringilla ut. Rhoncus mattis rhoncus urna neque. Rhoncus
             mattis rhoncus urna neque viverra justo nec ultrices. Netus et

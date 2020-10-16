@@ -12,6 +12,8 @@
   opacity: 0; // Testing
   visibility: hidden; // Testing
 
+  transition: all 0.3s; // For the showing and hiding of the modal
+
   // Buttons with href "#modal" will target this pseudo-class (they are targets, this is the anchor (this whole element))
   // :target specifically selects the element with the ID that matches the current URL fragment, which is where a buttons href would go
   &:target {
@@ -29,6 +31,13 @@
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
+      line-height: 1; // We have to set line height because the X is an HTML code and counts as text, so it is not quite placed where we want because the line height is making it taller than it looks
+
+      transition: all 0.2s; // For the color change on hover of the X button
+    }
+
+    &:hover {
+      color: $color-secondary-dark;
     }
   }
 
