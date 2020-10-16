@@ -499,7 +499,7 @@ body {
   .modal__left {
     width: 33.333333%; }
   .modal__right {
-    height: 66.666666%; }
+    width: 66.666666%; }
   .modal__img {
     display: block;
     width: 100%; }
