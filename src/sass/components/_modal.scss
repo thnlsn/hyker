@@ -47,5 +47,11 @@
     column-count: 2; // Heights of colums are automatically balanced, leaving the extra for the last column (which may be shorter)
     column-gap: 4rem; // By default it would use 1em, which whatever the parents (or this elements) font-size
     column-rule: 1px solid $color-grey-light-2; // Line to divide columns
+
+    // Not sure why this isnt working...
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; // In order to actually show hyphens, you must edit the document language in the html to a real language
   }
 }
