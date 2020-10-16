@@ -12,10 +12,24 @@
   opacity: 0; // Testing
   visibility: hidden; // Testing
 
-  // Buttons with href "#modal" will target this pseudo-element (they are targets, this is the anchor (this whole element))
+  // Buttons with href "#modal" will target this pseudo-class (they are targets, this is the anchor (this whole element))
+  // :target specifically selects the element with the ID that matches the current URL fragment, which is where a buttons href would go
   &:target {
     opacity: 1;
     visibility: visible;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark-1;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+    }
   }
 
   &__content {

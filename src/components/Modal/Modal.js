@@ -12,6 +12,9 @@ const Modal = () => {
           <img src={tourPhoto2} alt='Tour photo' className='modal__img' />
         </div>
         <div className='modal__right'>
+          <a href='#section-hikes' className='modal__close'>
+            &times;
+          </a>
           <h2 className='heading-secondary u-margin-bottom-small'>
             Start booking now
           </h2>

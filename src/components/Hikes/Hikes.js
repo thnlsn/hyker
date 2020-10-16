@@ -7,7 +7,7 @@ import Card from './Card/Card';
 const Hikes = () => {
   return (
     <Fragment>
-      <section className='section-hikes'>
+      <section className='section-hikes' id='section-hikes'>
         <div className='u-center-text u-margin-bottom-large'>
           <h2 className='heading-secondary'>Most popular hikes</h2>
         </div>
