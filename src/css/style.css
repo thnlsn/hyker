@@ -496,9 +496,15 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px; }
+  .modal__left {
+    width: 33.333333%; }
+  .modal__right {
+    height: 66.666666%; }
   .modal__img {
     display: block;
     width: 100%; }
+  .modal__ {
+    background-color: transparent; }
 
 .row {
   max-width: 114rem;
