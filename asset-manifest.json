@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/hyker/static/css/main.a9b2daf5.chunk.css",
+    "main.js": "/hyker/static/js/main.828c91b6.chunk.js",
+    "main.js.map": "/hyker/static/js/main.828c91b6.chunk.js.map",
+    "runtime-main.js": "/hyker/static/js/runtime-main.377371fe.js",
+    "runtime-main.js.map": "/hyker/static/js/runtime-main.377371fe.js.map",
+    "static/js/2.39ed17e4.chunk.js": "/hyker/static/js/2.39ed17e4.chunk.js",
+    "static/js/2.39ed17e4.chunk.js.map": "/hyker/static/js/2.39ed17e4.chunk.js.map",
+    "index.html": "/hyker/index.html",
+    "precache-manifest.ee4b249fede450fd7c3e1bf80f0214cb.js": "/hyker/precache-manifest.ee4b249fede450fd7c3e1bf80f0214cb.js",
+    "service-worker.js": "/hyker/service-worker.js",
+    "static/css/main.a9b2daf5.chunk.css.map": "/hyker/static/css/main.a9b2daf5.chunk.css.map",
+    "static/js/2.39ed17e4.chunk.js.LICENSE.txt": "/hyker/static/js/2.39ed17e4.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/hyker/static/media/nat-7.5f846d16.jpg",
+    "static/media/icon-font.css": "/hyker/static/media/linea-basic-10.e6763f00.ttf",
+    "static/media/logo-green-2x.png": "/hyker/static/media/logo-green-2x.3365abba.png",
+    "static/media/nat-1-large.jpg": "/hyker/static/media/nat-1-large.7fdf2a88.jpg",
+    "static/media/nat-2-large.jpg": "/hyker/static/media/nat-2-large.7a25f199.jpg",
+    "static/media/nat-3-large.jpg": "/hyker/static/media/nat-3-large.417d3d74.jpg",
+    "static/media/nat-8.jpg": "/hyker/static/media/nat-8.14efd82b.jpg",
+    "static/media/nat-9.jpg": "/hyker/static/media/nat-9.b525a99b.jpg",
+    "static/media/video.webm": "/hyker/static/media/video.f556a2c3.webm",
+    "static/media/video.mp4": "/hyker/static/media/video.ffcd876c.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.377371fe.js",
+    "static/js/2.39ed17e4.chunk.js",
+    "static/css/main.a9b2daf5.chunk.css",
+    "static/js/main.828c91b6.chunk.js"
+  ]
+}
