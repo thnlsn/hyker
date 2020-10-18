@@ -1,4 +1,9 @@
 /* Style imports (Every partial imported into here will be available app-wide) */
+/* @mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+} */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
