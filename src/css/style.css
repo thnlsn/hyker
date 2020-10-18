@@ -65,14 +65,20 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+  @media (min-width: 112.5em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -91,12 +97,24 @@ body {
     animation-delay: 1s;
     animation-iteration-count: 3;
     */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem; } }
+    @media (min-width: 112.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem; } }
+    @media (min-width: 112.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -106,6 +124,18 @@ body {
   background-image: linear-gradient(45deg, #7ed56f, #28b485);
   background-clip: text;
   color: transparent; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (min-width: 112.5em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (min-width: 112.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(0.5deg) skewX(2deg) scale(1.05);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
