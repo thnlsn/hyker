@@ -39,7 +39,7 @@ html {
   }
 }
 
-// Setting this is body because fonts will be inherited by child elements
+// Setting this is body because all children will inherit it since we set "box-sizing: inherit" above
 body {
   // Instead of height being top border + top padding + declared height + bottom padding + bottom border, it will simply be the declared height with the border & padding extending inwards
   box-sizing: border-box; // This makes the box model not count borders/paddings in total height/width, and will extend to all children and their children because it is set to inherit in the * selecto
