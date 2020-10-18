@@ -42,6 +42,9 @@
 // - tab-land
 // - big-desktop
 
+// ORDER OF WRITING MEDIA QUERIES:
+// Base + typography ▶ general layout (header, footer, etc.) + grid ▶ page layout (more specific) ▶ components
+
 // em and rems are NOT affected by our root (html element 62.5%) font-size setting, which means 1rem in a media query is affected only by browser default (16px), but if user changes it, our queries will adapt (which is good)
 // 1em = 16px: We use em because rem does not always work as intended in all browsers
 // em has been studied and determined to be the best for media queries, since we still want our breakpoints to adjust to the users default, otherwise the whole pages rem will scale without out media queries kicking in (if they were in px units)
