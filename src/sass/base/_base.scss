@@ -17,20 +17,25 @@ html {
   // Browser default size is 16px, but we want to set it to a percentage in case people with bad eyes have a different default
   // The percentage is 62.5% because it equates to 10px (which will make rem calculations easy) assuming the 16px default
 
-  // This defines what 1rem is
-  font-size: 62.5%;
+  // This defines what 1rem is (10px)
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
-  @include respond(phone) {
-    font-size: 50%;
-  }
-  @include respond(tab-port) {
-    font-size: 60%;
-  }
+  /*   @include respond(phone) {
+    font-size: 50%; // We want the 8px like below, so since both media queries would apply under 600px, this one is redundant
+  } */
+
   @include respond(tab-land) {
-    font-size: 70%;
+    // width < 900px? Apply this.
+    font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
   }
+
+  @include respond(tab-port) {
+    // width < 600px? Apply this. This comes AFTER the 900px query because we want this to take precedence if something is in fact < 600px, since that is true for both
+    font-size: 50%; // 1rem = 8px; 8/16 = 50%
+  }
+
   @include respond(big-desktop) {
-    font-size: 80%;
+    font-size: 75%; // 1rem = 12px; 12/16 = 75%
   }
 }
 
