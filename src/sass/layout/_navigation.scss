@@ -16,6 +16,16 @@
 
     text-align: center; // The burger icons are spans, which are inline so this works to center
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem; // Less far from the edges than the background because it is a rem larger
+      right: 4rem; // Less far from the edges than the background because it is a rem larger
+    }
+
+    @include respond(phone) {
+      top: 3rem; // Less far from the edges than the background because it is a rem larger
+      right: 3rem; // Less far from the edges than the background because it is a rem larger
+    }
   }
 
   &__background {
@@ -31,7 +41,17 @@
     );
     z-index: 100;
 
-    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); // For the scaling up of the radial background
+    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); // For the scaling up of the radial background3
+
+    @include respond(tab-port) {
+      top: 4.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+      right: 4.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+    }
+
+    @include respond(phone) {
+      top: 3.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+      right: 3.5rem; // .5 because it is smaller than the button, so it has to be further from the edges to be centered inside it
+    }
   }
 
   &__nav {
