@@ -42,7 +42,7 @@
   }
 
   @include respond(tab-port) {
-    padding: 20rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+    padding: 10rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
   }
 }
 

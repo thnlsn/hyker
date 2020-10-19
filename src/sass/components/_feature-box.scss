@@ -11,11 +11,19 @@
 
   transition: transform 0.3s;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem; // This is an icon, but works effectively as a font
     margin-bottom: 0.5rem;
     display: inline-block; // Because we want the gradient to go from one side to the other only
     @include text-gradient(90deg, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
