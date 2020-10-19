@@ -863,7 +863,7 @@ body {
   background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%); }
   @media (max-width: 56.25em) {
     .section-testimonials {
-      padding: 10rem 0 6rem 0; } }
+      padding: 10rem; } }
 
 .section-booking {
   padding: 15rem 0;
