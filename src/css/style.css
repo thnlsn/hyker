@@ -51,13 +51,7 @@ html {
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 56.25%; } }
   @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media (min-width: 112.5em) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -68,9 +62,6 @@ body {
   box-sizing: border-box;
   padding: 3rem; }
   @media (max-width: 56.25em) {
-    body {
-      padding: 0; } }
-  @media (min-width: 112.5em) {
     body {
       padding: 0; } }
 
@@ -100,9 +91,6 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem; } }
-    @media (min-width: 112.5em) {
-      .heading-primary--main {
-        letter-spacing: 1rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -110,9 +98,6 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: 0.5rem; } }
-    @media (min-width: 112.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
 
@@ -127,13 +112,7 @@ body {
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media (min-width: 112.5em) {
-    .heading-secondary {
-      font-size: 3rem; } }
   @media (max-width: 37.5em) {
-    .heading-secondary {
-      font-size: 2.5rem; } }
-  @media (min-width: 112.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -606,15 +585,9 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem; } }
-  @media (min-width: 112.5em) {
-    .row {
-      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-    @media (min-width: 112.5em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
   .row::after {
@@ -628,14 +601,7 @@ body {
       @media (max-width: 56.25em) {
         .row [class^='col-']:not(:last-child) {
           margin-right: 0; } }
-      @media (min-width: 112.5em) {
-        .row [class^='col-']:not(:last-child) {
-          margin-right: 0; } }
     @media (max-width: 56.25em) {
-      .row [class^='col-'] {
-        width: 100% !important;
-        margin-bottom: 6rem; } }
-    @media (min-width: 112.5em) {
       .row [class^='col-'] {
         width: 100% !important;
         margin-bottom: 6rem; } }
@@ -662,9 +628,6 @@ body {
   @media (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
-  @media (min-width: 112.5em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -686,16 +649,10 @@ body {
   @media (max-width: 56.25em) {
     .footer {
       padding: 5rem 0; } }
-  @media (min-width: 112.5em) {
-    .footer {
-      padding: 5rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
-      .footer__logo-box {
-        margin-bottom: 3rem; } }
-    @media (min-width: 112.5em) {
       .footer__logo-box {
         margin-bottom: 3rem; } }
   .footer__logo {
@@ -706,10 +663,6 @@ body {
     padding-top: 2rem;
     display: inline-block; }
     @media (max-width: 56.25em) {
-      .footer__navigation {
-        width: 100%;
-        text-align: center; } }
-    @media (min-width: 112.5em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -738,9 +691,6 @@ body {
     @media (max-width: 56.25em) {
       .footer__copyright {
         margin-bottom: 3rem; } }
-    @media (min-width: 112.5em) {
-      .footer__copyright {
-        margin-bottom: 3rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -761,15 +711,7 @@ body {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media (min-width: 112.5em) {
-    .navigation__button {
-      top: 4rem;
-      right: 4rem; } }
   @media (max-width: 37.5em) {
-    .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
-  @media (min-width: 112.5em) {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
@@ -788,15 +730,7 @@ body {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
-  @media (min-width: 112.5em) {
-    .navigation__background {
-      top: 4.5rem;
-      right: 4.5rem; } }
   @media (max-width: 37.5em) {
-    .navigation__background {
-      top: 3.5rem;
-      right: 3.5rem; } }
-  @media (min-width: 112.5em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }

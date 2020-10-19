@@ -70,7 +70,7 @@
     }
   }
 
-  @if $breakpoint == big desktop {
+  @if $breakpoint == big-desktop {
     // Larger than 1800px (1800/16)
     @media (min-width: 112.5em) {
       @content;
