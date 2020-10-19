@@ -68,10 +68,12 @@
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
     width: 80%;
-    float: right;
+    float: right; // This is whats pushing the copyright section to the right, something we dont want on smaller viewports, as we want most things centered
 
     @include respond(tab-port) {
-      margin-bottom: 3rem;
+      width: 100%;
+
+      text-align: center;
     }
   }
 }

@@ -7,6 +7,7 @@
 
   @include respond(tab-port) {
     max-width: 50rem;
+    padding: 0 2.5rem; // In very small viewports rows will take up 100% of space because the viewport will be less than the 50rem above, so we add padding so there will always be space
   }
 
   /* 
@@ -40,13 +41,13 @@
 
       @include respond(tab-port) {
         margin-right: 0; // No gutter anymore because we've set all the columns to 100% width, which means theres no margins between them because theres only 1 now
+        margin-bottom: $gutter-vertical-small;
       }
     }
 
     @include respond(tab-port) {
       // So instead of all the calculations for each column below, each part of a row will just become a col-1-of-1, basically
       width: 100% !important; // !important because it is very neccesary for this to override all the width calc's of the column types below
-      margin-bottom: $gutter-vertical-small;
     }
   }
 
