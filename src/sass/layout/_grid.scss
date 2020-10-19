@@ -3,7 +3,11 @@
 .row {
   // Standard used is to have rows be 1140px, but we use the rem equal to allow for more fluid design
   // max-width is set instead of just width because max-width only uses the declared amout if there is space, if not, it takes up 100% of the space (so it will adjust based on viewport)
-  max-width: $grid-width;
+  max-width: $grid-width; // If < than max-width, take 100% of available space
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
 
   /* 
   @include respond(tab-port) {
