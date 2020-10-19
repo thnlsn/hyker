@@ -5,6 +5,11 @@
   // max-width is set instead of just width because max-width only uses the declared amout if there is space, if not, it takes up 100% of the space (so it will adjust based on viewport)
   max-width: $grid-width;
 
+  /* 
+  @include respond(tab-port) {
+    max-width: 90%;
+  } */
+
   // This sets both the left and right margins to auto, which means they will be the same, whatever that is (meaning it will be centered)
   margin: 0 auto;
 
@@ -24,6 +29,15 @@
     &:not(:last-child) {
       // So that the last column does not have extra white space making the grid look off center
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0; // No gutter anymore because we've set all the columns to 100% width, which means theres no margins between them because theres only 1 now
+      }
+    }
+
+    @include respond(tab-port) {
+      // So instead of all the calculations for each column below, each part of a row will just become a col-1-of-1, basically
+      width: 100% !important; // !important because it is very neccesary for this to override all the width calc's of the column types below
     }
   }
 
@@ -31,7 +45,7 @@
 
   .col-1-of-2 {
     // Use built in CSS function calc() because it can mix units (rem & %) since it is calculated during the Visual Formatting Model phase since it is at that point that all units have been calculated as px (so in reality your are calculating px and not actually mixing units)
-    // Sass cannot do this because it compiles prior to tha above mention phase, when final sizes are not known in px
+    // Sass cannot do this because it compiles prior to the above mentioned phase, when final sizes are not known in px
     width: calc(
       (100% - #{$gutter-horizontal}) / 2
     ); // We take 100% of the width and minus the gutters on the sides, then divide by 2 because it is a 1 of 2 row, meaning 2 halves
