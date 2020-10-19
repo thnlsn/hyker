@@ -17,6 +17,10 @@
   // :not selector selects EVERYTHING other than what is in the pseudo-class (in this case :last-child)
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small; // All final rows in a group of rows will have a small margin bottom
+    }
   }
 
   // Clearfix is required on the rows because all the child elements are being floated, so their heights would collapse to 0px and they will all appear on top of each other
@@ -38,6 +42,7 @@
     @include respond(tab-port) {
       // So instead of all the calculations for each column below, each part of a row will just become a col-1-of-1, basically
       width: 100% !important; // !important because it is very neccesary for this to override all the width calc's of the column types below
+      margin-bottom: $gutter-vertical-small;
     }
   }
 
