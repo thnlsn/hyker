@@ -833,6 +833,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem; } }
 
 .section-features {
   padding: 20rem 0;
@@ -842,20 +845,32 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 20rem; } }
 
 .section-hikes {
   background-color: #f7f7f7;
   padding: 25rem 0 10rem 0;
   margin-top: -10rem; }
+  @media (max-width: 56.25em) {
+    .section-hikes {
+      padding: 20rem 0 5rem 0; } }
 
 .section-testimonials {
   padding: 13rem 0 9rem 0;
   position: relative;
   background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%); }
+  @media (max-width: 56.25em) {
+    .section-testimonials {
+      padding: 10rem 0 6rem 0; } }
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  @media (max-width: 56.25em) {
+    .section-booking {
+      padding: 10rem 0; } }
 
 .booking {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/nat-10.jpg);

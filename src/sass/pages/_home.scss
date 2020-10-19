@@ -10,6 +10,10 @@
   padding: 25rem 0;
   // Negative margin moves the box up and behind the header polygon because it created ugly white space since even a polygon is really a box
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 20rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
 }
 
 // This class is for the features section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
@@ -36,6 +40,10 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include respond(tab-port) {
+    padding: 20rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
 }
 
 // This class is for the hikes section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
@@ -43,6 +51,10 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0 10rem 0; // ##### 25rem 15rem
   margin-top: -10rem; // To cover up the white space left by the skewed section
+
+  @include respond(tab-port) {
+    padding: 20rem 0 5rem 0; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
 }
 
 .section-testimonials {
@@ -55,6 +67,10 @@
     rgba($color-grey-light-1, 1) 0%,
     transparent 5%
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 0 6rem 0; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
 }
 
 .section-booking {
@@ -64,6 +80,10 @@
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 0; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
 }
 
 .booking {
