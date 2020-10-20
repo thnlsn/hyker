@@ -527,6 +527,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -552,6 +555,11 @@ body {
 .form__radio-group {
   width: 50%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%; }
+      .form__radio-group:not(:last-child) {
+        margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }

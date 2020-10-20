@@ -17,6 +17,10 @@
 
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+      width: 100%; // Just increase the width of the forms to fill up the booking container
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -55,6 +59,15 @@
   &__radio-group {
     width: 50%; // *** May need to decrease this
     display: inline-block; // so that they will display side by side with 50& of each side
+
+    @include respond(tab-port) {
+      width: 100%; // So instead of the radio buttons side by side taking up half of 100% each, we just place them on top of one another
+
+      // Put a margin below only the first child radio button (basically buffer between them)
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   &__radio-input {
