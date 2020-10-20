@@ -14,6 +14,10 @@
   @include respond(tab-port) {
     padding: 20rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
   }
+
+  @include respond(phone) {
+    padding: 22rem 5rem;
+  }
 }
 
 // This class is for the features section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
@@ -44,6 +48,10 @@
   @include respond(tab-port) {
     padding: 10rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
   }
+
+  @include respond(phone) {
+    padding: 10rem 5rem;
+  }
 }
 
 // This class is for the hikes section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home
@@ -70,6 +78,10 @@
 
   @include respond(tab-port) {
     padding: 10rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+  }
+
+  @include respond(phone) {
+    padding: 10rem 1rem;
   }
 }
 

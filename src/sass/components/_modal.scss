@@ -29,6 +29,10 @@
     transform: translate(-50%, -50%) scale(0.25); // Initial state (We have to repeat the centering from the mixin because you cannot have 2 different transform declarations, or else the last one takes precedence, which in this case would mess it up unless we repeated the centering)
 
     transition: all 0.4s 0.2s; // .2s is a delay for the popup, so the dark background happens first and when it almost finishes we popup the modal
+
+    @include respond(tab-port) {
+      display: inline-block;
+    }
   }
 
   &__left {
@@ -36,6 +40,14 @@
     // float: left;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -44,11 +56,21 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__img {
     display: block; // Usually a good idea for images
     width: 100%;
+    @include respond(tab-port) {
+      width: 50%;
+      height: 20rem;
+      display: inline-block;
+    }
   }
 
   &__text {
@@ -57,6 +79,10 @@
     column-count: 2; // Heights of colums are automatically balanced, leaving the extra for the last column (which may be shorter)
     column-gap: 4rem; // By default it would use 1em, which whatever the parents (or this elements) font-size
     column-rule: 1px solid $color-grey-light-2; // Line to divide columns
+
+    @include respond(phone) {
+      column-count: 1;
+    }
 
     // Not sure why this isnt working...
     -moz-hyphens: auto;
