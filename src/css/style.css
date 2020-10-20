@@ -970,7 +970,7 @@ body {
       margin: 0 4rem; } }
   @media (max-width: 56.25em) {
     .booking {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 65%), url(../images/nat-10.jpg);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/nat-10.jpg);
       margin: 0; } }
   .booking__form {
     width: 50%;
