@@ -447,6 +447,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-16deg); }
+  @media (max-width: 56.25em) {
+    .testimonial {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .testimonial {
+      transform: skewX(0); } }
   .testimonial__shape {
     width: 15rem;
     height: 15rem;
@@ -458,6 +466,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem, 0) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .testimonial__shape {
+        transform: translate(-3rem, 0) skewX(0); } }
   .testimonial__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -465,6 +476,9 @@ body {
     transition: all 0.5s; }
   .testimonial__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .testimonial__text {
+        transform: skewX(0); } }
   .testimonial__caption {
     position: absolute;
     top: 50%;

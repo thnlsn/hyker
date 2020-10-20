@@ -10,6 +10,16 @@
 
   transform: skewX(-16deg);
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0); // Unskew the container
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -29,6 +39,10 @@
     transform: translate(-3rem, 0) skewX(12deg); // The skew is to unskew this element from it's parent
 
     position: relative; // This is for the name caption to be centered absolutely
+
+    @include respond(phone) {
+      transform: translate(-3rem, 0) skewX(0); // Unskew the image circle
+    }
   }
 
   &__image {
@@ -43,6 +57,10 @@
     transform: skewX(
       12deg
     ); // The skew is to unskew this element from it's parent
+
+    @include respond(phone) {
+      transform: skewX(0); // Unskew the text
+    }
   }
 
   &__caption {
