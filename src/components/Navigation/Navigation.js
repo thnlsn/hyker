@@ -1,41 +1,21 @@
 import React from 'react';
 
 import NavigationToggle from './NavigationToggle';
+import NavigationMenu from './NavigationMenu';
+
+const links = [
+  { title: 'About Hyker', href: '#' },
+  { title: 'Your Benefits', href: '#' },
+  { title: 'Popular Hikes', href: '#' },
+  { title: 'Stories', href: '#' },
+  { title: 'Book Now', href: '#' },
+];
 
 const Navigation = () => {
   return (
     <div className='navigation'>
-    <NavigationToggle />
-
-      <nav className='navigation__nav'>
-        <ul className='navigation__list'>
-          <li className='navigation__item'>
-            <a href='#' className='navigation__link'>
-              About Hyker
-            </a>
-          </li>
-          <li className='navigation__item'>
-            <a href='#' className='navigation__link'>
-              Your benefits
-            </a>
-          </li>
-          <li className='navigation__item'>
-            <a href='#' className='navigation__link'>
-              Popular hikes
-            </a>
-          </li>
-          <li className='navigation__item'>
-            <a href='#' className='navigation__link'>
-              Stories
-            </a>
-          </li>
-          <li className='navigation__item'>
-            <a href='#' className='navigation__link'>
-              Book now
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <NavigationToggle />
+      <NavigationMenu links={links} />
     </div>
   );
 };
