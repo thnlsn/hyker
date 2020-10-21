@@ -6,13 +6,23 @@ const logo1x = require('../../images/logo-green-1x.png');
 // 2x pixel density for high res screens (smartphones, iPads, retina display, etc.)
 const logo2x = require('../../images/logo-green-2x.png');
 
+// Horizontally displayed logo image for phone screens
+const logoMobile1x = require('../../images/logo-green-small-1x.png');
+// Horizontally displayed logo image for phone screens with high res displays
+const logoMobile2x = require('../../images/logo-green-small-2x.png');
+
 // Footer Section
 const Footer = () => {
   return (
     <Fragment>
       <footer className='footer'>
         <div className='footer__logo-box'>
-          <img srcSet={`${logo1x} 1x, ${logo2x} 2x`} alt='Full Logo' className='footer__logo' />
+          <picture className='footer__logo'>
+            {/* Art direction - switching image based upon a given width (like a media query) */}
+            <source srcSet={`${logoMobile1x} 1x, ${logoMobile2x} 2x`} media='(max-width: 37.5em)'/>
+            {/* Density switching - switching image based upon screen resolution */}
+            <img srcSet={`${logo1x} 1x, ${logo2x} 2x`} alt='Full Logo' />
+          </picture>
         </div>
         <div className='row'>
           <div className='col-1-of-2'>
