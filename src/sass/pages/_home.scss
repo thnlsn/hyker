@@ -61,7 +61,7 @@
   margin-top: -10rem; // To cover up the white space left by the skewed section
 
   @include respond(tab-port) {
-    padding: 20rem 0 5rem 0; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
+    padding: 20rem 0 6rem 0; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
   }
 }
 
@@ -77,10 +77,12 @@
   );
 
   @include respond(tab-land) {
+    padding: 10rem 1rem;
+    // Remove the gradient fade in for tablet
     background-image: linear-gradient(
-      to bottom,
-      rgba($color-grey-light-1, 1) 0%,
-      rgba($color-grey-light-1, 0%) 5%
+      to right,
+      rgba($color-white, 0.1) 0%,
+      rgba($color-white, 0.1) 100%
     );
   }
 
@@ -89,6 +91,12 @@
   }
 
   @include respond(phone) {
+    // Reinstate the gradient for phone since it works on phone for some reason
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-grey-light-1, 1) 0%,
+      transparent 5%
+    );
     padding: 10rem 1rem;
   }
 }

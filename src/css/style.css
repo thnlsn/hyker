@@ -984,7 +984,7 @@ body {
   margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .section-hikes {
-      padding: 20rem 0 5rem 0; } }
+      padding: 20rem 0 6rem 0; } }
 
 .section-testimonials {
   padding: 13rem 0 9rem 0;
@@ -992,12 +992,14 @@ body {
   background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%); }
   @media (max-width: 75em) {
     .section-testimonials {
-      background-image: linear-gradient(to bottom, #f7f7f7 0%, rgba(247, 247, 247, 0) 5%); } }
+      padding: 10rem 1rem;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%); } }
   @media (max-width: 56.25em) {
     .section-testimonials {
       padding: 10rem; } }
   @media (max-width: 37.5em) {
     .section-testimonials {
+      background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%);
       padding: 10rem 1rem; } }
 
 .section-booking {
