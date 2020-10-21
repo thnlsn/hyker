@@ -31,7 +31,7 @@
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
 
-    // Creates the circle shape (same as polygon but circle)
+    // Creates the circle shape (same as polygon but circle) - This is the actual visible circle
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 

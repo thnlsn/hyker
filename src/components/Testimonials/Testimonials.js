@@ -42,7 +42,7 @@ const Testimonials = () => {
             name='Aleksander Matsen'
             image={p2}
             heading='These experiences have changed my life'
-            text='Similique, nisi voluptatem, alias magnam deserunt eligendi minima atque odit natus impedit maiores doloribus beatae. Amet saepe, ipsam repudiandae, eum numquam voluptatum totam ipsum magni blanditiis ad quaerat dolorem. Ea eligendi itaque quisquam et provident ipsum, a, accusantium ratione in nobis, aperiam vero debitis. Reprehenderit dolore asperiores, atque quaerat incidunt quibusdam.'
+            text='Similique, nisi voluptatem, alias magnam deserunt eligendi minima atque odit natus impedit maiores doloribus beatae. Ea eligendi itaque quisquam et provident ipsum, a, accusantium ratione in nobis, aperiam vero debitis. Reprehenderit dolore asperiores, atque quaerat incidunt quibusdam.'
           />
         </div>
         <div className='u-center-text u-margin-top-xl'>
