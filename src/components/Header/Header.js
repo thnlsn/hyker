@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
+const headerLogo = require('../../images/logo-white.png')
+
 // Header
 const Header = () => {
   return (
@@ -8,7 +10,7 @@ const Header = () => {
       <header className='header'>
         <div className='header__logo-box'>
           <img
-            src='./images/logo-white.png'
+            src={headerLogo}
             alt='Logo'
             className='header__logo'
           />
