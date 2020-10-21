@@ -19,7 +19,10 @@ const Footer = () => {
         <div className='footer__logo-box'>
           <picture className='footer__logo'>
             {/* Art direction - switching image based upon a given width (like a media query) */}
-            <source srcSet={`${logoMobile1x} 1x, ${logoMobile2x} 2x`} media='(max-width: 37.5em)'/>
+            <source
+              srcSet={`${logoMobile1x} 1x, ${logoMobile2x} 2x`}
+              media='(max-width: 37.5em)'
+            />
             {/* Density switching - switching image based upon screen resolution */}
             <img srcSet={`${logo1x} 1x, ${logo2x} 2x`} alt='Full Logo' />
           </picture>
@@ -63,7 +66,7 @@ const Footer = () => {
                 Thomas Nelson
               </a>{' '}
               as practice learning CSS and Sass.
-              <p> Copyright &copy; by Jonas Schmedtmann</p>
+              <span> Copyright &copy; by Jonas Schmedtmann</span>
             </p>
           </div>
         </div>

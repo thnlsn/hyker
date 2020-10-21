@@ -5,8 +5,8 @@ const NavigationMenu = ({ links }) => {
   return (
     <nav className='navigation__nav'>
       <ul className='navigation__list'>
-        {links.map((link) => (
-          <li className='navigation__item'>
+        {links.map((link, index) => (
+          <li className='navigation__item' key={index}>
             <a href={link.href} className='navigation__link'>
               {link.title}
             </a>
