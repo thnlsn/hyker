@@ -61,7 +61,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     body {
       padding: 0; } }
 
@@ -986,6 +986,9 @@ body {
   padding: 13rem 0 9rem 0;
   position: relative;
   background-image: linear-gradient(to bottom, #f7f7f7 0%, transparent 5%); }
+  @media (max-width: 75em) {
+    .section-testimonials {
+      background-image: linear-gradient(to bottom, #f7f7f7 0%, rgba(247, 247, 247, 0) 5%); } }
   @media (max-width: 56.25em) {
     .section-testimonials {
       padding: 10rem; } }

@@ -76,6 +76,14 @@
     transparent 5%
   );
 
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-grey-light-1, 1) 0%,
+      rgba($color-grey-light-1, 0%) 5%
+    );
+  }
+
   @include respond(tab-port) {
     padding: 10rem; // Spaced out page is nice on desktop but too much for tablet and phone, so we reduce it a little
   }
