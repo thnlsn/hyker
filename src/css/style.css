@@ -701,6 +701,10 @@ body {
     max-width: 90%;
   } */
   margin: 0 auto; }
+  @media (max-width: 75em) {
+    .row {
+      max-width: 99.5%;
+      padding: 0 2.5rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;

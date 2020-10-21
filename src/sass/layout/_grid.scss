@@ -5,6 +5,11 @@
   // max-width is set instead of just width because max-width only uses the declared amout if there is space, if not, it takes up 100% of the space (so it will adjust based on viewport)
   max-width: $grid-width; // If < than max-width, take 100% of available space
 
+  @include respond(tab-land) {
+    max-width: 99.5%;
+    padding: 0 2.5rem; // In very small viewports rows will take up 100% of space because the viewport will be less than the 50rem above, so we add padding so there will always be space
+  }
+
   @include respond(tab-port) {
     max-width: 50rem;
     padding: 0 2.5rem; // In very small viewports rows will take up 100% of space because the viewport will be less than the 50rem above, so we add padding so there will always be space
