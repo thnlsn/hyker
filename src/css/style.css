@@ -688,6 +688,11 @@ body {
     transition: all 0.2s; }
   .modal__close:hover {
     color: #ff7730; }
+  @media (max-width: 56.25em) {
+    .modal__close {
+      background-color: #fff;
+      padding: 0 0.6rem;
+      border-radius: 50%; } }
 
 .row {
   max-width: 114rem;
