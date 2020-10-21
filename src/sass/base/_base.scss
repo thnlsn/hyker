@@ -45,7 +45,7 @@ body {
   box-sizing: border-box; // This makes the box model not count borders/paddings in total height/width, and will extend to all children and their children because it is set to inherit in the * selecto
   padding: 3rem; // This is in base because it encompasses the whole app and all the content is within this border
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     // width < 900px?
     padding: 0;
   }
