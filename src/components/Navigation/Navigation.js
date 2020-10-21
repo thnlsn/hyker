@@ -1,19 +1,11 @@
 import React from 'react';
 
+import NavigationToggle from './NavigationToggle';
+
 const Navigation = () => {
   return (
     <div className='navigation'>
-      <input
-        type='checkbox'
-        className='navigation__checkbox'
-        id='navigation-toggle'
-      />
-
-      <label htmlFor='navigation-toggle' className='navigation__button'>
-        <span className='navigation__icon unselectable'>&nbsp;</span>
-      </label>
-
-      <div className='navigation__background unselectable'>&nbsp;</div>
+    <NavigationToggle />
 
       <nav className='navigation__nav'>
         <ul className='navigation__list'>
