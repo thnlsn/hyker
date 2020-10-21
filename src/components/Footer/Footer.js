@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
 
-const logo = require('../../images/logo-green-2x.png');
+// 1x pixel density for low res screens (normal desktop screens)
+const logo1x = require('../../images/logo-green-1x.png');
+// 2x pixel density for high res screens (smartphones, iPads, retina display, etc.)
+const logo2x = require('../../images/logo-green-2x.png');
 
 // Footer Section
 const Footer = () => {
@@ -9,7 +12,7 @@ const Footer = () => {
     <Fragment>
       <footer className='footer'>
         <div className='footer__logo-box'>
-          <img src={logo} alt='Full Logo' className='footer__logo' />
+          <img srcSet={`${logo1x} 1x, ${logo2x} 2x`} alt='Full Logo' className='footer__logo' />
         </div>
         <div className='row'>
           <div className='col-1-of-2'>
