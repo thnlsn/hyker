@@ -12,6 +12,8 @@ const Hikes = () => {
           <h2 className='heading-secondary'>Most popular hikes</h2>
         </div>
 
+        {/* Add a way to pass in background images, in the future */}
+
         <div className='row'>
           <div className='col-1-of-3'>
             <Card

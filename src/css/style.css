@@ -299,6 +299,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s; }
+  @media (max-width: 75em) {
+    .feature-box {
+      min-height: 30rem; } }
   @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -407,7 +410,7 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .card {
     height: auto;
     border-radius: 3px;
@@ -628,7 +631,8 @@ body {
   .modal__left {
     width: 33.333333%;
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+    background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
     @media (max-width: 56.25em) {
       .modal__left {
         width: 100%;
@@ -651,8 +655,9 @@ body {
     @media (max-width: 56.25em) {
       .modal__img {
         width: 50%;
-        height: 20rem;
-        display: inline-block; } }
+        height: 25rem;
+        display: inline-block;
+        object-fit: cover; } }
   .modal__text {
     font-size: 1.4rem;
     column-count: 2;

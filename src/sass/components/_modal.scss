@@ -41,6 +41,12 @@
     display: table-cell;
     vertical-align: middle;
 
+    background: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    );
+
     @include respond(tab-port) {
       width: 100%;
       display: block;
@@ -66,10 +72,12 @@
   &__img {
     display: block; // Usually a good idea for images
     width: 100%;
+
     @include respond(tab-port) {
       width: 50%;
-      height: 20rem;
+      height: 25rem;
       display: inline-block;
+      object-fit: cover; // So the images dont lose aspect ratio
     }
   }
 

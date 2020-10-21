@@ -11,6 +11,10 @@
 
   transition: transform 0.3s;
 
+  @include respond(tab-land) {
+    min-height: 30rem;
+  }
+
   @include respond(tab-port) {
     padding: 2rem;
   }
