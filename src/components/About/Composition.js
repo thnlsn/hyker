@@ -9,7 +9,7 @@ const Composition = ({ composition }) => {
         alt='Photo 1'
         className='composition__photo composition__photo--p1'
         // (*breakpoint*) *approximate percentage images takes up*, (another breakpoint etc.) *another percentage in vw*, *at the end just define the default pixel width at your main viewport*
-        sizes='(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px' // If no breakpoint applies, use the last argument (basically says use whichever image we've supplied that happens to display best at 300px)
+        sizes='(max-width: 56.25em) 17vw, (max-width: 37.5em) 26vw, 300px' // If no breakpoint applies, use the last argument (basically says use whichever image we've supplied that happens to display best at 300px)
         src={composition[0].imageLarge} // Serve this if the browser is too old for srcset and sizes attributes
       />
       <img
@@ -17,7 +17,7 @@ const Composition = ({ composition }) => {
         alt='Photo 2'
         className='composition__photo composition__photo--p2'
         // (*breakpoint*) *approximate percentage images takes up*, (another breakpoint etc.) *another percentage in vw*, *at the end just define the default pixel width at your main viewport*
-        sizes='(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px'
+        sizes='(max-width: 56.25em) 17vw, (max-width: 37.5em) 26vw, 300px'
         src={composition[1].imageLarge} // Serve this if the browser is too old for srcset and sizes attributes
       />
       <img
@@ -25,7 +25,7 @@ const Composition = ({ composition }) => {
         alt='Photo 3'
         className='composition__photo composition__photo--p3'
         // (*breakpoint*) *approximate percentage images takes up*, (another breakpoint etc.) *another percentage in vw*, *at the end just define the default pixel width at your main viewport*
-        sizes='(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px'
+        sizes='(max-width: 56.25em) 17vw, (max-width: 37.5em) 26vw, 300px' // 37.5em = 600px && 56.25em = 900px
         src={composition[2].imageLarge} // Serve this if the browser is too old for srcset and sizes attributes
       />
     </div>
