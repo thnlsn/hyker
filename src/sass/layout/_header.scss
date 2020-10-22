@@ -8,7 +8,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(../images/hero.jpg); // Specified 2 background-image properties. First gradient, then image
+    url(../images/hero-small.jpg); // Specified 2 background-image properties. First gradient, then image
   background-size: cover; // Background will always fit within the element
   background-position: top; // The top of the background image will always stay at the top of the container and crop out the bottom
   clip-path: polygon(
@@ -17,6 +17,17 @@
     100% 75vh,
     0 100%
   ); // Defines corners of the element from top left going clockwise
+
+  // 192dpi is simply a commonly used resolution breakpoint to signify a high resolution screen (it is a dpi of Apple Retina displays)
+  // If the resolution is high AND viewport greater than 600px width (600/16 = 37.5em), use the high res version OR, if the viewport is huge (125em/2000px) use the high res
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../images/hero.jpg);
+  }
 
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
