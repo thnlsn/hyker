@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec623808a76de10b8fe8e51aeb2c7b8a",
+    "revision": "e61b6fed5162d5357fd396dffbd5d452",
     "url": "/hyker/index.html"
   },
   {
-    "revision": "d8f0ac88ad663e3a6218",
-    "url": "/hyker/static/css/main.55e2cd3a.chunk.css"
+    "revision": "d39df6bd228f74c01e05",
+    "url": "/hyker/static/css/main.8e29c66f.chunk.css"
   },
   {
     "revision": "8d2216a4aaef45c8214e",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hyker/static/js/2.39ed17e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8f0ac88ad663e3a6218",
-    "url": "/hyker/static/js/main.c602003f.chunk.js"
+    "revision": "d39df6bd228f74c01e05",
+    "url": "/hyker/static/js/main.240f1f77.chunk.js"
   },
   {
     "revision": "72817c41777881204663",
     "url": "/hyker/static/js/runtime-main.377371fe.js"
+  },
+  {
+    "revision": "cd69d3552824dc8e99c3f2953de2735b",
+    "url": "/hyker/static/media/hero-small.cd69d355.jpg"
   },
   {
     "revision": "6e09f4102b0d64adc38d21bd9c89a9a7",
@@ -44,12 +48,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hyker/static/media/linea-basic-10.e6763f00.ttf"
   },
   {
+    "revision": "4c42c11f1fc0203483c21f2d6eeb8896",
+    "url": "/hyker/static/media/logo-green-1x.4c42c11f.png"
+  },
+  {
     "revision": "3365abba6477c48e6be892cf6faa8f25",
     "url": "/hyker/static/media/logo-green-2x.3365abba.png"
   },
   {
+    "revision": "888043d544c9ed77285afbc360ffd27e",
+    "url": "/hyker/static/media/logo-green-small-2x.888043d5.png"
+  },
+  {
+    "revision": "40d4ef82deebd0521e91006d961ead40",
+    "url": "/hyker/static/media/logo-white.40d4ef82.png"
+  },
+  {
     "revision": "7fdf2a886516e020e300ae6bd544ab7d",
     "url": "/hyker/static/media/nat-1-large.7fdf2a88.jpg"
+  },
+  {
+    "revision": "d6c15bf0efcaf4c03c5cb0c9078cdd17",
+    "url": "/hyker/static/media/nat-1.d6c15bf0.jpg"
   },
   {
     "revision": "2797561ff2a3de15c850f2744b73b6d1",
@@ -60,8 +80,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hyker/static/media/nat-2-large.7a25f199.jpg"
   },
   {
+    "revision": "4d3783688636b59662283e19991a2912",
+    "url": "/hyker/static/media/nat-2.4d378368.jpg"
+  },
+  {
     "revision": "417d3d741a7a47b3d6ef0307228033a0",
     "url": "/hyker/static/media/nat-3-large.417d3d74.jpg"
+  },
+  {
+    "revision": "cc2b05433cbad0b369d131d02c0cac6a",
+    "url": "/hyker/static/media/nat-3.cc2b0543.jpg"
   },
   {
     "revision": "61bbf12ae90a30cd432d77087921a02f",
