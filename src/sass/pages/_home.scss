@@ -18,6 +18,10 @@
   @include respond(phone) {
     padding: 22rem 5rem;
   }
+
+  @include respond(tall) {
+    padding: 30rem 0 20rem 0;
+  }
 }
 
 // This class is for the features section but it is unique to this webpage rather than a commonly reusable componenet, so it is in _home

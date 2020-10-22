@@ -962,6 +962,9 @@ body {
   @media (max-width: 37.5em) {
     .section-about {
       padding: 22rem 5rem; } }
+  @media (min-height: 64.75em) {
+    .section-about {
+      padding: 30rem 0 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
