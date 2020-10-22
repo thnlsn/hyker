@@ -1,15 +1,21 @@
 import React, { Fragment } from 'react';
 import '../../css/style.css';
+import Composition from './Composition';
 
-// Images for use in the three image composition
-const p1 = require('../../images/nat-1.jpg');
-const p2 = require('../../images/nat-2.jpg');
-const p3 = require('../../images/nat-3.jpg');
-
-// Images for use in the three image composition in large vw
-const p1Large = require('../../images/nat-1-large.jpg');
-const p2Large = require('../../images/nat-2-large.jpg');
-const p3Large = require('../../images/nat-3-large.jpg');
+const composition = [
+  {
+    imageSmall: require('../../images/nat-1.jpg'),
+    imageLarge: require('../../images/nat-1-large.jpg'),
+  },
+  {
+    imageSmall: require('../../images/nat-2.jpg'),
+    imageLarge: require('../../images/nat-2-large.jpg'),
+  },
+  {
+    imageSmall: require('../../images/nat-3.jpg'),
+    imageLarge: require('../../images/nat-3-large.jpg'),
+  },
+];
 
 // About Section
 const About = () => {
@@ -47,28 +53,7 @@ const About = () => {
             </a>
           </div>
           <div className='col-1-of-2'>
-            <div className='composition'>
-              <img
-                srcSet={`${p1} 300w, ${p1Large} 1000w`}
-                alt='Photo 1'
-                className='composition__photo composition__photo--p1'
-                // (*breakpoint*) *approximate percentage images takes up*, (another breakpoint etc.) *another percentage in vw*, *at the end just define the default pixel width at your main viewport*
-                sizes='(max-width: 900px) 17vw, (max-width: 600px) 26vw, 300px'
-                src={p1Large} // Serve this if the browser is too old for srcset and sizes attributes
-              />
-              <img
-                srcSet={`${p2} 300w, ${p2Large} 1000w`}
-                alt='Photo 2'
-                className='composition__photo composition__photo--p2'
-                sizes='(max-width: 900px )'
-              />
-              <img
-                srcSet={`${p3} 300w, ${p3Large} 1000w`}
-                alt='Photo 3'
-                className='composition__photo composition__photo--p3'
-                sizes='(max-width: 900px )'
-              />
-            </div>
+            <Composition composition={composition} />
           </div>
         </div>
       </section>
@@ -77,3 +62,13 @@ const About = () => {
 };
 
 export default About;
+
+/* // Images for use in the three image composition
+const p1 = require('../../images/nat-1.jpg');
+const p2 = require('../../images/nat-2.jpg');
+const p3 = require('../../images/nat-3.jpg');
+
+// Images for use in the three image composition in large vw
+const p1Large = require('../../images/nat-1-large.jpg');
+const p2Large = require('../../images/nat-2-large.jpg');
+const p3Large = require('../../images/nat-3-large.jpg'); */
