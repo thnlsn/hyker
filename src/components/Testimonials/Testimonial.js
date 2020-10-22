@@ -4,7 +4,12 @@ const Testimonial = ({ name, image, heading, text }) => {
   return (
     <div className='testimonial'>
       <figure className='testimonial__shape'>
-        <img src={image} alt='' className='testimonial__image' />
+        <img
+          srcSet={image}
+          alt={`${name} Testimonial`}
+          className='testimonial__image'
+          src={image}
+        />
         <figcaption className='testimonial__caption'>{name}</figcaption>
       </figure>
       <div className='testimonial__text'>
