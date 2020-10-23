@@ -3,6 +3,7 @@
     display: none;
   }
 
+  // The actual white circle button (not the burger icon)
   &__button {
     background-color: $color-white;
     height: 7rem; // 1 rem larger than the size of the __background, because we want that to be hidden under the button and only expand when clicked

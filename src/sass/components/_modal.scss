@@ -3,6 +3,8 @@
   width: 100%; // 100vw would work as well
   background-color: rgba($color-black, 0.8);
 
+  backdrop-filter: blur(10px);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -47,9 +49,12 @@
       rgba($color-primary-dark, 0.8)
     );
 
+    padding-right: 0.19rem; // Tiny buffer preventing the scaled up images from looking like they escape out of their left container
+
     @include respond(tab-port) {
       width: 100%;
       display: block;
+      padding-right: 0; // Remove the small buffer
     }
     @include respond(phone) {
       display: none;
@@ -71,6 +76,9 @@
 
   &__img {
     display: block; // Usually a good idea for images
+    transform: scale(
+      1.01
+    ); // Only reason for this is becaue a sliver of the background color was visible behind the image, so scaling it slightly covered it up
     width: 100%;
 
     @include respond(tab-port) {
