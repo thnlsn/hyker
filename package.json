@@ -30,6 +30,7 @@
     "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
     "concat:css": "concat -o ./src/css/style.concat.css ./src/css/icon-font.css ./src/css/style.comp.css",
     "prefix:css": "postcss ./src/css/style.concat.css --use autoprefixer -o ./src/css/style.prefix.css",
+    "compress:css": "node-sass ./src/css/style.prefix.css ./src/css/style.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

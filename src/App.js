@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/icon-font.css';
+/* import './css/icon-font.css'; */
 import './css/style.css';
 
 //Components
