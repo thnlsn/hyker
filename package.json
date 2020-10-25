@@ -17,6 +17,7 @@
     "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.4",
     "postcss-cli": "^8.1.0"
   },
   "scripts": {
@@ -28,22 +29,12 @@
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
     "concat:css": "concat -o ./src/css/style.concat.css ./src/css/icon-font.css ./src/css/style.comp.css",
+    "prefix:css": "postcss ./src/css/style.concat.css --use autoprefixer -o ./src/css/style.prefix.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": "last 10 versions"
 }
