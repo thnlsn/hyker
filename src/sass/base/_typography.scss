@@ -59,7 +59,11 @@ body {
 
   transition: all 0.3s;
 
-  @include text-gradient(45deg, $color-primary-light, $color-primary-dark);
+  color: $color-primary-light; // This is the color of the heading if the browser doesn't support background-clip
+  // This is the gradient text for browsers that do support it (most modern ones will)
+  @supports (background-clip: text) {
+    @include text-gradient(45deg, $color-primary-light, $color-primary-dark);
+  }
 
   // ▩▩▩ MEDIA QUERIES ▩▩▩
   @include respond(tab-port) {
