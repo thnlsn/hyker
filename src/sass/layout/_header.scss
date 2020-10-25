@@ -2,7 +2,6 @@
 
 // class selector instal of default header element
 .header {
-  height: 95vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -17,6 +16,14 @@
     100% 75vh,
     0 100%
   ); // Defines corners of the element from top left going clockwise
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    // Prefixed versions always go first
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // Defines corners of the element from top left going clockwise
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh; // Only want this if polygon is supported, because if it isnt it will be a straight edge at the bottom and users might not know the page continues, so we make it shorter to let them know
+  }
 
   // 192dpi is simply a commonly used resolution breakpoint to signify a high resolution screen (it is a dpi of Apple Retina displays)
   // If the resolution is high AND viewport greater than 600px width (600/16 = 37.5em), use the high res version OR, if the viewport is huge (125em/2000px) use the high res
