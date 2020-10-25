@@ -25,6 +25,7 @@
     "dev": "npm-run-all -p -r start watch:sass",
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "concat:css": "concat -o ./src/css/style.concat.css ./src/css/icon-font.css ./src/css/style.comp.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
