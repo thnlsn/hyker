@@ -459,16 +459,20 @@ body {
     .testimonial {
       transform: skewX(0); } }
   .testimonial__shape {
+    float: left;
+    border-radius: 50%;
     width: 15rem;
     height: 15rem;
-    float: left;
     overflow: hidden;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translate(-3rem, 0) skewX(12deg);
+    transform: translate(-3rem, 0) skewX(16deg);
     position: relative; }
+    @supports (clip-path: circle(0 at 0 0)) or (-webkit-clip-path: circle(0 at 0 0)) {
+      .testimonial__shape {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 37.5em) {
       .testimonial__shape {
         transform: translate(-3rem, 0) skewX(0); } }
@@ -478,7 +482,7 @@ body {
     backface-visibility: hidden;
     transition: all 0.5s; }
   .testimonial__text {
-    transform: skewX(12deg); }
+    transform: skewX(16deg); }
     @media (max-width: 37.5em) {
       .testimonial__text {
         transform: skewX(0); } }
@@ -750,6 +754,7 @@ body {
     width: calc( (((100% - (6rem * 3)) / 4) * 3) + (6rem * 2)); }
 
 .header {
+  height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero-small.jpg);
   background-size: cover;
   background-position: top;

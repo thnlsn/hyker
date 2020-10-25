@@ -8,7 +8,9 @@
   padding-left: 9rem;
   font-size: $default-font-size;
 
-  transform: skewX(-16deg);
+  transform: skewX(
+    -16deg
+  ); // We have to skew the children in the opposite direction so they remain straight in the container
 
   @include respond(tab-port) {
     width: 100%;
@@ -21,24 +23,30 @@
   }
 
   &__shape {
-    width: 15rem;
-    height: 15rem;
     float: left;
 
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
     overflow: hidden; // To hide any bit of the image that might peer through the cracks of the original box around it
 
-    // Requires the element to be floated to work: defines an area for which adjacent inline content should wrap around, so we make it equal to the circle
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-
-    // Creates the circle shape (same as polygon but circle) - This is the actual visible circle
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-
     // The left padding is 9rem as opposed to the 6rem elsewhere to make space and even the distance for the -3rem that the circle takes up
-    transform: translate(-3rem, 0) skewX(12deg); // The skew is to unskew this element from it's parent
+    transform: translate(-3rem, 0) skewX(16deg); // The skew is to unskew this element from it's parent
 
     position: relative; // This is for the name caption to be centered absolutely
+
+    // Simply checks if the conditions are supported by the browser, and if so, applies the styles within (I just use 0's on the conditions because it doesn't have to be any specific styles)
+    @supports (clip-path: circle(0 at 0 0)) or
+      (-webkit-clip-path: circle(0 at 0 0)) {
+      // Creates the circle shape (same as polygon but circle) - This is the actual visible circle
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+
+      // Requires the element to be floated to work: defines an area for which adjacent inline content should wrap around, so we make it equal to the circle
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: translate(-3rem, 0) skewX(0); // Unskew the image circle
@@ -55,7 +63,7 @@
 
   &__text {
     transform: skewX(
-      12deg
+      16deg
     ); // The skew is to unskew this element from it's parent
 
     @include respond(phone) {
