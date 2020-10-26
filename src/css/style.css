@@ -1,9 +1,4 @@
 /* Style imports (Every partial imported into here will be available app-wide) */
-/* @mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-} */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -417,7 +412,8 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
-@media only screen and (max-width: 75em) {
+/* @include respond(tab-land) { */
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
     height: auto;
     border-radius: 3px;
