@@ -1,7 +1,7 @@
 # Hyker
 
 <p align="center">
-  <img src="https://media.giphy.com/media/1JWUsS2j7XwW09NgrH/source.gif" />
+  <img src="https://media.giphy.com/media/1JWUsS2j7XwW09NgrH/giphy.gif" />
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -11,6 +11,8 @@
 This is Hyker, an imaginary app that aims to streamline the hiking process for both veterans and newcomers alike. Options include all difficulties, such as the inclusion of hotels for a more casual trip, or as bare bones bringing your own tents, if you so please. Book a trip for your family, friends, or make some new friends by joining in with some other hikers!
 
 ## Live Link: [https://thnlsn.github.io/hyker/](https://thnlsn.github.io/hyker/)
+
+Check it out on your phone or tablet, it's fully responsive!
 
 ## Background
 
