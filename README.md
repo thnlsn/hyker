@@ -33,7 +33,7 @@ If you would like to clone and run the project locally, follow the steps below.
 1. Clone the repo
 
 ```sh
-git clone git@github.com:thnlsn/world-clock.git
+git clone git@github.com:thnlsn/hyker.git
 ```
 
 2. Install NPM packages
