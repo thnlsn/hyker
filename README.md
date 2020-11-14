@@ -1,7 +1,7 @@
 # Hyker
 
 <p align="center">
-  <img src="https://drive.google.com/file/d/1FGhVQaOFOodgXJ9FuGB9ew5JSt5XJ3Qd/preview" />
+  <img src="https://drive.google.com/file/d/1FGhVQaOFOodgXJ9FuGB9ew5JSt5XJ3Qd/preview" width="640" height="480" />
 </p>
 
 <!-- ABOUT THE PROJECT -->
