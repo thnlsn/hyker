@@ -1,7 +1,7 @@
 # Hyker
 
 <p align="center">
-  <img src="https://i.giphy.com/media/iny7w3xPSQBMFNbaq1/giphy.gif" />
+  <img src="https://media.giphy.com/media/iny7w3xPSQBMFNbaq1/giphy-downsized.gif" />
 </p>
 
 <!-- ABOUT THE PROJECT -->
