@@ -1,8 +1,6 @@
 # Hyker
 
-<p align="center">
-  <img src="https://media.giphy.com/media/1JWUsS2j7XwW09NgrH/giphy.gif" />
-</p>
+![hyker](https://media.giphy.com/media/Idxq185yIzLl4Aubca/giphy.gif)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -16,13 +14,20 @@ Check it out on your phone or tablet, it's fully responsive!
 
 ## Background
 
-This project was built alongside an Advanced CSS & Sass course on uDemy by Jonas Schtedmann. The project included no JavaScript, however, I built it using React and Javascript functionality to add more to the page that would have been impossible limited only to CSS & Sass.
+This project was built alongside an Advanced CSS & Sass course on uDemy by Jonas Schtedmann. The project included no JavaScript, however, I built it using React & Javascript functionality to add more to the page that would have been impossible limited only to CSS & Sass. As for the CSS/Sass, I made concentrated effort to employ advanced philosophies and strategies. For example, responsive images to serve only images that are appropriate for the device as improve to performace. Graceful degradation via the @supports at-rule (feature queries) to provide alternate styles for devices that may not support modern css properties.
 
 ### Built With
 
+#### Technologies
+
 -   [React](https://reactjs.org/)
 -   [Sass](https://sass-lang.com/)
+
+#### Design Philosophy
+
 -   [BEM Methodology](https://en.bem.info/methodology/)
+-   [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+-   [Graceful Degradation](https://developer.mozilla.org/en-US/docs/Glossary/Graceful_degradation)
 
 <!-- GETTING STARTED -->
 
