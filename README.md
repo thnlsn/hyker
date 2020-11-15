@@ -6,7 +6,7 @@
 
 ## About The Project
 
-This is Hyker, an imaginary app that aims to streamline the hiking process for both veterans and newcomers alike. Options include all difficulties, such as the inclusion of hotels for a more casual trip, or as bare bones bringing your own tents, if you so please. Book a trip for your family, friends, or make some new friends by joining in with some other hikers!
+This is Hyker, an imaginary app that aims to streamline the hiking process for both veterans and newcomers alike. Options include varying difficulties, such as the inclusion of hotels for a more casual trip, or as bare bones bringing your own tents if you so please. Book a trip for your family, friends, or make some new friends by joining in with some other hikers!
 
 ## Live Link: [https://thnlsn.github.io/hyker/](https://thnlsn.github.io/hyker/)
 
