@@ -1,8 +1,10 @@
 # Hyker
 
 <p align="center">
-  <img src="https://media.giphy.com/media/iny7w3xPSQBMFNbaq1/giphy-downsized.gif" />
+  <img src="../assets/Hyker | Large.gif?raw=true" />
 </p>
+
+![Demo Animation](../assets/Hyker | Large.gif?raw=true)
 
 <!-- ABOUT THE PROJECT -->
 
