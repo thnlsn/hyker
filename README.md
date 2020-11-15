@@ -1,6 +1,6 @@
 # Hyker
 
-![hyker](https://media.giphy.com/media/kjcZ5gvrNpImGhGr3t/source.gif)
+![hyker](https://media.giphy.com/media/kjcZ5gvrNpImGhGr3t/giphy.gif)
 
 <!-- ABOUT THE PROJECT -->
 
