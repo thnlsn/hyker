@@ -4,8 +4,6 @@
   <img src="../assets/Hyker | Large.gif?raw=true" />
 </p>
 
-![Demo Animation](../assets/Hyker | Large.gif?raw=true)
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
