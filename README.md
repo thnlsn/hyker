@@ -16,7 +16,7 @@ Check it out on your phone or tablet, it's fully responsive!
 
 ## Background
 
-This project was built alongside an Advanced CSS & Sass course on uDemy by Jonas Schtedmann. The project included no JavaScript, however, I built it using React & Javascript functionality to add more to the page that would have been impossible limited only to CSS & Sass. As for the CSS/Sass, I made concentrated effort to employ advanced philosophies and strategies. For example, responsive images to serve only images that are appropriate for the device as improve to performace. Graceful degradation via the @supports at-rule (feature queries) to provide alternate styles for devices that may not support modern css properties.
+This project was built alongside an Advanced CSS & Sass course on uDemy by Jonas Schtedmann. The project included no JavaScript, however, I built it using React & Javascript functionality to add more to the page that would have been impossible limited only to CSS & Sass. As for the CSS/Sass, I made concentrated effort to employ advanced philosophies and strategies. For example, responsive images to serve only images that are appropriate for the device as improve to performace as well as graceful degradation via the @supports at-rule (feature queries) to provide alternate styles for devices that may not support modern css properties.
 
 ### Built With
 
